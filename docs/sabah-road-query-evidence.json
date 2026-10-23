@@ -1,0 +1,94 @@
+{
+  "count": {
+    "count": 18015
+  },
+  "extent": {
+    "extent": {
+      "ymin": 4.1875011756052505,
+      "xmin": 115.34298507672658,
+      "ymax": 7.266427120126555,
+      "xmax": 119.27741209487075,
+      "spatialReference": {
+        "latestWkid": 4326,
+        "wkid": 4326
+      }
+    }
+  },
+  "sample": {
+    "geometryProperties": {
+      "shapeLengthFieldName": "SHAPE__Length",
+      "units": "esriMeters"
+    },
+    "hasZ": false,
+    "features": [
+      {
+        "attributes": {
+          "road_name": "J. Kubu Baru",
+          "district_name": "Beaufort",
+          "road_length": null,
+          "objectid": 47
+        },
+        "geometry": {
+          "paths": [
+            [
+              [
+                115.73876,
+                5.38848
+              ],
+              [
+                115.73861,
+                5.38858
+              ]
+            ]
+          ]
+        }
+      }
+    ],
+    "exceededTransferLimit": true,
+    "hasM": false,
+    "globalIdFieldName": "globalid",
+    "objectIdFieldName": "objectid",
+    "fields": [
+      {
+        "visible": true,
+        "defaultValue": null,
+        "length": 4,
+        "type": "esriFieldTypeOID",
+        "modelName": "objectid",
+        "name": "objectid",
+        "alias": "OBJECTID"
+      },
+      {
+        "visible": true,
+        "defaultValue": null,
+        "length": 255,
+        "type": "esriFieldTypeString",
+        "modelName": "road_name",
+        "name": "road_name",
+        "alias": "road_name"
+      },
+      {
+        "visible": true,
+        "defaultValue": null,
+        "length": 150,
+        "type": "esriFieldTypeString",
+        "modelName": "district_name",
+        "name": "district_name",
+        "alias": "district_name"
+      },
+      {
+        "visible": true,
+        "defaultValue": null,
+        "type": "esriFieldTypeDouble",
+        "modelName": "road_length",
+        "name": "road_length",
+        "alias": "road_length"
+      }
+    ],
+    "spatialReference": {
+      "latestWkid": 4326,
+      "wkid": 4326
+    },
+    "geometryType": "esriGeometryPolyline"
+  }
+}

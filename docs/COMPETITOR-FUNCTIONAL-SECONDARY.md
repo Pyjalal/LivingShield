@@ -1,0 +1,52 @@
+# Supplemental public demo checks
+
+Checked **21 October 2026**, with captures approximately **13:08–13:20 MYT**. An isolated Playwright CLI browser exercised the 15 assigned projects through safe public navigation, filters and explicitly offered synthetic-demo access. This supplements [the original visual benchmark](COMPETITOR-VISUAL-BENCHMARK.md); it does not silently convert earlier incomplete Browser Agent runs into passes.
+
+Nine projects exposed a bounded application flow that was observed. Givlah exposed a documentation chapter flow; WasteLoop exposed resident/staff entry navigation; HomeLoop and Tolong remained at authentication boundaries. SIAGA returned a hosting error, while MapOKU’s published address exposed a backend response. **AccessTwin was reachable after its initial Streamlit loading state settled**, correcting the earlier unavailable observation. Green Loop’s explicitly offered resident demo also opened successfully.
+
+The [machine-readable report](competitor-functional-secondary.json) records exact actions, outcomes, untested features and screenshots. All **30 desktop/mobile screenshots** were visually inspected. They are local artifacts under `C:/Users/Shahjalal/.codex/tmp/livingshield-secondary/`, named `<project>-desktop.png` and `<project>-mobile.png` using the stems in the table below. DOM snapshots and CLI logs are retained in the same directory.
+
+## What was observed
+
+| Project / public address | Safe flow and observed outcome | Limit and screenshot stem |
+| --- | --- | --- |
+| [HomeLoop](https://home-loop-coral.vercel.app/) | Valuation entry navigated to its sign-in page with `/valuation` retained as the next destination. | Authentication was not attempted; valuation, matching and application remain untested. `HomeLoop` |
+| [Givlah](https://givlah.vercel.app/) | Selecting the matching chapter changed the hash and exposed its crew-matching explanation and captured app image. | Documentation navigation only. The site explicitly says the hosted app is unavailable; matching was not executed. External video was not played in this supplemental pass; separate video observations apply. `Givlah` |
+| [WasteLoop](https://wasteloop-seven.vercel.app/) | Resident entry switched to a distinct staff sign-in screen. | Public demo credentials were visible, but login and the operational workflows were not exercised. `WasteLoop` |
+| [CasSama](https://cytang1107.github.io/CasSama/) | Opened the charger map and applied the price limit. Price-marker buttons reduced **21 → 5**. | Demonstrates a working UI filter over labelled demo data; no booking, real availability, price or route validation. `CasSama` |
+| [SUSpot](https://suspot.netlify.app/) | Incident entry opened the review dashboard, which displayed its explicit empty state. | No photo/location submission, AI review or incident lifecycle tested. `SUSpot` |
+| [JiranLink](https://jiranlink.vercel.app/) | Browsed services, chose air-conditioning repair and obtained **two provider matches**, with cards and corresponding map markers. | No request, booking, message, resident verification or review authenticity tested. `JiranLink` |
+| [Tolong / Team Odyssey](https://team-odyssey-sdp.vercel.app/) | Public URL redirected to login; the password visibility control worked. Google entry is explicitly unavailable. | This is authentication-interface evidence, not a verified community workflow. No credentials entered. `Tolong` |
+| [SD-Wallet](https://simedarby-hackathon.vercel.app/) | Opened the restaurant module from the wallet and observed **six restaurant cards** with displayed table/wait/status values. | No payment, transfer, upload, status update or API mutation. Displayed financial/carbon/availability figures unvalidated. `SDWallet` |
+| [MOVA](https://sime-darby-mova.vercel.app/) | Explicit resident demo opened the SS2 map. Changing the access profile visibly selected the visual-impairment option. | No barrier report, fixed flag, emergency action or sensor permission. Compliance percentages and route/measurement claims unvalidated. `MOVA` |
+| [Township Green Loop](https://township-green-loop-capybara.vercel.app/) | Chose its explicit synthetic resident demo, signed in to that existing demo and opened Portfolio. Allocation, payout chart/history and principal/profit figures rendered. | No account creation, investing, payout generation or redemption. The access page labels its people/assets fictional and says no real money moves. Financial/energy/carbon calculations unvalidated. `GreenLoop` |
+| [Teduh](https://sazweena.github.io/teduh-demo/) | Opened reports and filtered for built items. Data rows reduced **8 → 1**; the remaining row matched the built status. | No report, vote, plan or status change. Thermal, benefit and cost calculations unvalidated. `Teduh` |
+| [NgamSoil](https://ngam-soil.vercel.app/) | Followed the offline-sensor alert to its matching batch, with the temperature chart, same alert and **six linked intakes**. | Sample data; no intake, batch transition, compost test or recommendation submitted. Real sensor/soil/impact accuracy unvalidated. `NgamSoil` |
+| [SIAGA](https://siaga-puce.vercel.app/) | Fresh request returned **HTTP 404 / DEPLOYMENT_NOT_FOUND**. | No product screen available at this address; no conclusion about local/source implementation. `SIAGA` |
+| [MapOKU](https://map-oku-backend.vercel.app/) | Fresh request rendered a backend JSON health/service response. | This URL does not expose a resident UI. A healthy endpoint is not a tested app journey. `MapOKU` |
+| [AccessTwin](https://accesstwin-demo.streamlit.app/) | After loading settled, Network opened. Navigated to Compare and selected its simulated scenario: displayed wheelchair journey changed **1.1 km → 450 m** after rerender. | Explicitly fictional/synthetic; the page says the recorded network is unchanged. No real-site accessibility, AI/CCTV, report or work-order validation. `AccessTwin` |
+
+## Desktop and mobile observations
+
+Captures use **1440 × 1000** and **390 × 844** CSS pixels. HomeLoop’s action was exercised at desktop width; its mobile view is layout-only evidence. The other interactive actions were exercised at 390px before capturing both widths. A desktop screenshot of the resulting state does not establish that every action was replayed at desktop width. These are browser viewport checks, not real-phone, screen-reader, touch or installation certification.
+
+- HomeLoop, WasteLoop and Tolong preserve readable, coherent sign-in surfaces. HomeLoop places a large illustration before the account form on mobile; Tolong keeps a narrow phone-shaped presentation on desktop. Authentication still obscures their main value flows in this pass.
+- CasSama and JiranLink make the active search/filter and place relationship legible. Mobile uses persistent navigation and a dominant map. Map tiles were still filling/recentring in some desktop captures after resizing, so transient blank regions are not labelled stable app defects.
+- SUSpot’s empty state is clear at both widths but provides little evidence of the proposed incident journey. SD-Wallet’s navy/orange cards and module identity remain consistent when stacked on mobile.
+- MOVA keeps profile selection, warnings and map content distinct on mobile. A microphone-denied message appeared after profile selection; no microphone permission was granted and no voice/emergency feature was exercised.
+- Green Loop’s allocation and payout hierarchy is clear on both widths. Its floating assistant overlaps part of the allocation legend in the 390px capture. The portfolio screen is real UI displaying synthetic financial data, not proof of investment performance.
+- Teduh’s desktop report table is clear. At 390px its navigation occupies substantial height and the wide table is clipped within its card. Internal horizontal-scroll recovery was not tested; the outer document itself did not overflow. Its fixed presentation controls also consume the bottom edge.
+- NgamSoil keeps its sample-data labels, batch progression and temperature chart readable when the sidebar becomes bottom navigation. AccessTwin reflows its explanatory score and assumptions above its comparison controls, with the synthetic/simulated labels retained.
+- Givlah’s mobile chapter capture contains a legible image of its local app. The desktop capture retained a later scroll position after resizing and some lazy images were blank at capture. This is documentation evidence, not a failed hosted app or a live matching pass.
+
+The outer-document width checks returned no horizontal overflow for these captured states. This does not establish that every internal table, map, iframe or overlay is ideal.
+
+## Boundaries and reconciliation
+
+Only read-only product exploration was performed. No accounts were created, messages sent, incident forms submitted, bookings made, money moved, investments purchased or records updated. The existing, explicitly offered Green Loop synthetic account was used solely to view its portfolio. Reset, status-update, payment, emergency, report and verification controls were left untouched.
+
+An initial attempt to select AccessTwin’s styled hidden radio input timed out. Clicking the observed visible label succeeded, and the subsequent rendered snapshot confirmed the changed journey text. This automation issue is not a product failure. Its earlier host-only observation must remain historically labelled rather than being presented as its current capability.
+
+This pass covers one bounded flow or access boundary per assigned project. It does not claim comprehensive feature testing, persistence, security, AI quality, calculation correctness, commercial viability or field impact. Alternate CasCas, JiranLink GitHub Pages and Teduh phone-concept addresses were not repeated here; retain their separate records from the original ledger. The Givlah video was not played in this supplemental pass; separate video observations apply. Repository descriptions remain claims wherever no corresponding action/result is listed above.
+
+For LivingShield, the supported comparison is about presentation and demonstrability: keep the selected place, scenario assumptions, visible change and exported evidence in one understandable sequence; expose a public demo entry without requiring judges to create an account; and preserve honest synthetic/model/source labels. These observations do not establish a ranking across all features or a probability of winning.

@@ -1,0 +1,374 @@
+:root,
+.app {
+  --tt-font: 'Segoe UI', Arial, sans-serif;
+  --tt-font-heading: Georgia, 'Times New Roman', serif;
+  --tt-bg: #f4f3ea;
+  --tt-surface: #fbfaf2;
+  --tt-surface-raised: #fffef7;
+  --tt-surface-muted: #e6eadc;
+  --tt-text: #203f3e;
+  --tt-muted: #52685f;
+  --tt-subtle: #52665a;
+  --tt-border: #c7d3bd;
+  --tt-border-strong: #718d7b;
+  --tt-accent: #285f58;
+  --tt-accent-contrast: #ffffff;
+  --tt-accent-soft: #e2ece0;
+  --tt-warning: #895120;
+  --tt-warning-bg: #f5e9d0;
+  --tt-error: #ad3e32;
+  --tt-error-bg: #f8e4de;
+  --tt-info: #226b80;
+  --tt-info-bg: #e0edef;
+  --tt-nav-bg: #10272b;
+  --tt-nav-text: #e7eee4;
+  --tt-nav-muted: #b4c9bf;
+  --tt-nav-active-bg: #244541;
+  --tt-nav-active: #d8edac;
+  --tt-overlay-bg: #fffef7f2;
+  --tt-scene-bg: #dce5dc;
+  --hg-bg: var(--tt-bg);
+  --hg-panel: var(--tt-surface);
+  --hg-panel-2: var(--tt-surface-muted);
+  --hg-text: var(--tt-text);
+  --hg-muted: var(--tt-muted);
+  --hg-green: var(--tt-accent);
+  --hg-green-dim: var(--tt-muted);
+  --hg-green-muted: var(--tt-subtle);
+  --hg-green-faint: var(--tt-accent-soft);
+  --hg-border: var(--tt-border);
+  --hg-border-bright: var(--tt-border-strong);
+  --hg-error: var(--tt-error);
+  --hg-error-bg: var(--tt-error-bg);
+  --hg-layer-icon: var(--tt-accent);
+  --hg-glow: 0 0 0 transparent;
+  --hg-glow-sm: 0 0 0 transparent;
+  --hg-glow-lg: 0 8px 24px #10272b14;
+  color-scheme: light;
+}
+
+.app[data-ui-theme='dark'] {
+  --tt-bg: #102326;
+  --tt-surface: #142e31;
+  --tt-surface-raised: #1c3a3b;
+  --tt-surface-muted: #213c3b;
+  --tt-text: #edf1e7;
+  --tt-muted: #afc6bb;
+  --tt-subtle: #a2b9af;
+  --tt-border: #395952;
+  --tt-border-strong: #78988a;
+  --tt-accent: #b2d397;
+  --tt-accent-contrast: #102d26;
+  --tt-accent-soft: #28483c;
+  --tt-warning: #edc58d;
+  --tt-warning-bg: #453a29;
+  --tt-error: #ffb2a5;
+  --tt-error-bg: #492e2c;
+  --tt-info: #8fd1df;
+  --tt-info-bg: #21414a;
+  --tt-overlay-bg: #142e31f2;
+  --tt-scene-bg: #102426;
+  color-scheme: dark;
+}
+
+.app[data-ui-theme='terminal'] {
+  --tt-bg: #050b0a;
+  --tt-surface: #0b1714;
+  --tt-surface-raised: #10231e;
+  --tt-surface-muted: #182e25;
+  --tt-text: #ffffff;
+  --tt-muted: #d2e2d7;
+  --tt-subtle: #c3d8c9;
+  --tt-border: #7f9d8a;
+  --tt-border-strong: #d8edac;
+  --tt-accent: #d8edac;
+  --tt-accent-contrast: #07160e;
+  --tt-accent-soft: #263e29;
+  --tt-warning: #ffe0a8;
+  --tt-warning-bg: #3c311c;
+  --tt-error: #ffc1b5;
+  --tt-error-bg: #482523;
+  --tt-info: #aee5f0;
+  --tt-info-bg: #193944;
+  --tt-overlay-bg: #0b1714fa;
+  --tt-scene-bg: #050b0a;
+  color-scheme: dark;
+}
+
+.app {
+  color: var(--tt-text);
+  font-family: var(--tt-font);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.app :is(button, input, select, textarea) {
+  font-family: var(--tt-font);
+}
+
+.app :is(button, a, input, select, summary, textarea):focus-visible {
+  outline: 3px solid var(--tt-warning);
+  outline-offset: 3px;
+}
+
+.app :is(input, select, textarea) {
+  accent-color: var(--tt-accent);
+}
+
+.app input::placeholder,
+.app textarea::placeholder {
+  color: var(--tt-subtle);
+  opacity: 1;
+}
+
+.app .tab-bar {
+  container-type: inline-size;
+  container-name: app-navigation;
+  background: var(--tt-nav-bg);
+  border-bottom: 1px solid #395952;
+  color: var(--tt-nav-text);
+  min-height: 48px;
+  height: 48px;
+  gap: 10px;
+}
+
+.app .tab-brand {
+  color: var(--tt-nav-text);
+  letter-spacing: -0.4px;
+  border-color: #395952;
+  text-shadow: none;
+  font-size: 14px;
+}
+
+.app .tab-btn {
+  color: var(--tt-nav-muted);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  min-height: 32px;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+
+.app .tab-btn:hover,
+.app .tab-btn.active {
+  color: var(--tt-nav-active);
+  background: var(--tt-nav-active-bg);
+  border-color: #91b777;
+  box-shadow: none;
+}
+
+.app .tab-theme-btn {
+  color: var(--tt-nav-text);
+  border-color: #58796b;
+  background: transparent;
+  border-radius: 4px;
+  min-height: 30px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.app .tab-theme-btn:hover {
+  color: var(--tt-nav-active);
+  background: var(--tt-nav-active-bg);
+}
+
+.app .tab-dropdown,
+.app .tab-scale-menu {
+  background: var(--tt-surface-raised);
+  color: var(--tt-text);
+  border-color: var(--tt-border-strong);
+  box-shadow: var(--hg-glow-lg);
+}
+
+.app :is(.tab-dropdown-item, .tab-scale-option) {
+  color: var(--tt-text);
+  font-family: var(--tt-font);
+  text-transform: none;
+  letter-spacing: 0;
+  min-height: 36px;
+}
+
+.app :is(.tab-dropdown-item, .tab-scale-option):hover,
+.app :is(.tab-dropdown-item, .tab-scale-option).active {
+  background: var(--tt-accent-soft);
+  color: var(--tt-accent);
+}
+
+.app .my-toolbar {
+  background: var(--tt-surface-muted);
+  color: var(--tt-text);
+  padding: 10px 20px;
+  font-size: 12px;
+}
+
+.app .my-toolbar label {
+  white-space: nowrap;
+}
+
+.app .my-toolbar .my-idf-label {
+  flex: 0 1 480px;
+}
+
+.app .my-toolbar .my-idf-label select {
+  min-width: 0;
+  max-width: 320px;
+}
+
+.app .my-toolbar .precip-btn {
+  width: auto;
+  flex: 0 0 auto;
+  padding: 7px 12px;
+}
+
+.app :is(.precip-sidebar-header h2, .sidebar-header h1) {
+  font-family: var(--tt-font-heading);
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: -0.6px;
+  text-transform: none;
+  text-shadow: none;
+  color: var(--tt-text);
+}
+
+.app :is(.precip-subtitle, .sidebar-tagline) {
+  color: var(--tt-muted);
+  font-size: 11px;
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+
+.app :is(.precip-hint, .sidebar-intro, .prop-info-card, .footer-credit) {
+  color: var(--tt-muted);
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+.app :is(.dc-select, .prop-input, .precip-select, .my-toolbar select) {
+  background: var(--tt-surface-raised);
+  color: var(--tt-text);
+  border-color: var(--tt-border-strong);
+  border-radius: 4px;
+  min-height: 34px;
+}
+
+.app :is(.precip-btn, .export-btn, .prop-search-btn, .sidebar-category-header) {
+  border-radius: 4px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  min-height: 32px;
+}
+
+.app .precip-overlay-loading {
+  color: var(--tt-muted);
+  background: var(--tt-bg);
+  text-shadow: none;
+  font-family: var(--tt-font);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  padding: 24px;
+  text-align: center;
+}
+
+.app :is(.leaflet-popup-content-wrapper, .leaflet-popup-tip) {
+  background: var(--tt-surface-raised);
+  color: var(--tt-text);
+}
+
+.app .leaflet-popup-content {
+  font-family: var(--tt-font);
+}
+
+.app .recharts-default-tooltip {
+  background: var(--tt-surface-raised) !important;
+  border: 1px solid var(--tt-border-strong) !important;
+  color: var(--tt-text);
+  border-radius: 4px;
+  font-family: var(--tt-font);
+}
+
+.app :is(.recharts-tooltip-label, .recharts-legend-item-text) {
+  color: var(--tt-text) !important;
+}
+
+.app :is(.recharts-cartesian-axis-tick-value, .recharts-label) {
+  fill: var(--tt-muted);
+  font-family: var(--tt-font);
+}
+
+.app .recharts-cartesian-grid line {
+  stroke: var(--tt-border);
+}
+
+.app .my-site-report-grid > div {
+  min-width: 0;
+}
+
+.app .my-site-report-grid > div > .precip-btn {
+  display: block;
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+@container app-navigation (max-width: 1400px) {
+  .app .tab-brand {
+    font-size: 0;
+    padding-right: 8px;
+    gap: 0;
+  }
+  .app .tab-buttons {
+    min-width: 0;
+    flex: 1 1 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #78988a var(--tt-nav-bg);
+    align-items: center;
+  }
+  .app .tab-buttons > * {
+    flex-shrink: 0;
+  }
+  .app .tab-dropdown {
+    position: fixed;
+    top: 48px;
+    left: 12px;
+    right: auto;
+    min-width: 240px;
+    max-width: calc(100vw - 24px);
+    z-index: 6000;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding-top: 0;
+  }
+  .app .tab-bar {
+    position: relative;
+    min-height: 48px;
+    height: 48px;
+    padding: 0 8px;
+  }
+  .app .app-content {
+    margin-top: 0;
+    height: auto;
+    min-height: 0;
+    flex: 1 1 0;
+    position: relative;
+  }
+  .app .tab-btn {
+    font-size: 11px;
+    padding: 6px 9px;
+    min-height: 32px;
+  }
+  .app .tab-dropdown {
+    width: calc(100vw - 24px);
+  }
+  .app .my-toolbar {
+    padding: 8px 12px;
+    font-size: 11px;
+  }
+}

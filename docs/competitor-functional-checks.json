@@ -1,0 +1,372 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-21",
+  "timeZone": "Asia/Kuala_Lumpur",
+  "method": "Supplemental first-hand Playwright CLI isolated Chromium session functionalqa; no Browser Agent/Jev queue used.",
+  "artifactRoot": "C:/Users/Shahjalal/Documents/SimeDarbyHack/hydrogrid-malaysia/app/output/competitor-functional",
+  "viewports": {
+    "desktop": { "width": 1440, "height": 1000 },
+    "mobile": { "width": 390, "height": 844 }
+  },
+  "scope": "Eight public demos; bounded desktop interactions and inspected mobile first-screen/workspace captures. Not an organiser roster, end-to-end audit or judging prediction.",
+  "safety": "Public navigation, browser-local scenario inputs and explicit public demo-account entry only. No account creation, guessed credentials, messages, submitted reports, approvals, holds, appointments, loans or payments.",
+  "commonLimits": [
+    "Displayed numerical correctness and physical outcomes unvalidated",
+    "Mobile captures do not constitute full mobile workflow/accessibility tests",
+    "No complete operational transaction was performed",
+    "Screenshots are ignored local QA artifacts, not deployment assets"
+  ],
+  "projects": [
+    {
+      "project": "NEXORA",
+      "repo": "cokiii01/nexora",
+      "url": "https://nexora-phi-inky.vercel.app/",
+      "result": "verified_bounded_demo_navigation",
+      "actions": [
+        {
+          "label": "Explore NEXORA ↗",
+          "observed": "Command Centre sign-in view; URL remains root, button has no observed href"
+        },
+        {
+          "label": "Run guided demo ▶",
+          "observed": "Earlier separate attempt remained disabled Starting… for more than 20 seconds",
+          "status": "entry_path_unresolved"
+        },
+        {
+          "label": "Resident Connect",
+          "observed": "Resident sign-in view; no authentication submitted on this path"
+        },
+        {
+          "label": "Sign in with the demo account",
+          "observed": "Explicit public demo entry opened Command Centre after about 5 seconds"
+        },
+        {
+          "label": "Water & leaks 1 → Zone A FM-A Healthy…",
+          "observed": "Chart heading changed Zone C inlet flow → Zone A inlet flow"
+        },
+        {
+          "label": "Flood warning",
+          "observed": "Three simulated sensor cards, threshold lines and rainfall scenario controls displayed"
+        },
+        {
+          "label": "Digital Twin",
+          "observed": "3D neighbourhood and sensor labels rendered; console reported gateway connected"
+        }
+      ],
+      "screenshots": [
+        { "file": "nexora-overview.png", "viewport": "desktop", "inspected": true },
+        { "file": "nexora-water.png", "viewport": "desktop", "inspected": true },
+        { "file": "nexora-twin.png", "viewport": "desktop", "inspected": true },
+        { "file": "nexora-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Collapsed icon navigation, stacked sections and visible 3D scene; scene-edge labels cropped. Lower sensor detail not reviewed.",
+      "limits": [
+        "No storm/burst trigger or job transition",
+        "Gateway connection does not prove physical telemetry",
+        "Simulated sensor accuracy unvalidated"
+      ],
+      "jevTarget": {
+        "url": "https://nexora-phi-inky.vercel.app/",
+        "steps": [
+          "Wait for Explore NEXORA ↗",
+          "Explore NEXORA ↗",
+          "Sign in with the demo account",
+          "Water & leaks 1",
+          "Zone A FM-A Healthy…"
+        ],
+        "assertVisible": "Zone A inlet flow"
+      }
+    },
+    {
+      "project": "TamanKu",
+      "repo": "hongchenzhijin/TamanKu",
+      "url": "https://tamanku.misv3.org/",
+      "result": "verified_bounded_sample_report_inspection",
+      "actions": [
+        {
+          "label": "Clogged drain causing fl… map pin",
+          "observed": "Pointer intercepted by dock/header; no forced click",
+          "status": "occluded_initial_pin"
+        },
+        { "label": "Report 4", "observed": "Six sample report cards, four open and two fixed" },
+        { "label": "Fixed", "observed": "List reduced to two fixed reports" },
+        {
+          "label": "Clogged drain causing flash floods… card",
+          "observed": "TK-0389 modal, agency/context fields and four-stage tracking timeline displayed"
+        }
+      ],
+      "screenshots": [
+        { "file": "tamanku-initial.png", "viewport": "desktop", "inspected": true },
+        { "file": "tamanku-drain-detail.png", "viewport": "desktop", "inspected": true },
+        { "file": "tamanku-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Map and bottom drawer visible; horizontal layer dock and gauges without desktop text labels. No mobile report flow.",
+      "limits": [
+        "People/posts/figures labelled sample",
+        "No agency submission, confirmation or reopen action",
+        "One favicon404, not a flow failure"
+      ],
+      "jevTarget": {
+        "url": "https://tamanku.misv3.org/",
+        "steps": ["Report 4", "Fixed", "Clogged drain causing flash floods… report card"],
+        "assertVisible": "TK-0389 and Tracking"
+      }
+    },
+    {
+      "project": "Solar Kita",
+      "repo": "aidajamil21/solar-kita-hackathon",
+      "url": "https://aidajamil21.github.io/solar-kita-hackathon/#/explore",
+      "result": "verified_bounded_scene_linked_filter_and_detail",
+      "actions": [
+        {
+          "label": "3D map of City of Elmina…",
+          "observed": "Opened Explore hash route with four project sites"
+        },
+        { "label": "Rooftop", "observed": "Visible project list reduced to Elmina West Homes" },
+        {
+          "label": "Rooftop Yours Elmina West Homes…",
+          "observed": "Focused site and opened project drawer with six rooftop availability controls"
+        }
+      ],
+      "screenshots": [
+        { "file": "solarkita-map.png", "viewport": "desktop", "inspected": true },
+        { "file": "solarkita-detail.png", "viewport": "desktop", "inspected": true },
+        { "file": "solarkita-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "3D controls, horizontal filters/project cards and bottom navigation visible; some pins cropped at map boundary.",
+      "limits": [
+        "No participation or purchase",
+        "Finance/carbon/generation/availability unvalidated",
+        "Three.js deprecation warnings did not prevent observed views"
+      ],
+      "jevTarget": {
+        "url": "https://aidajamil21.github.io/solar-kita-hackathon/#/explore",
+        "steps": ["Rooftop", "Rooftop Yours Elmina West Homes…"],
+        "assertVisible": "Elmina West Homes and Select your rooftops"
+      }
+    },
+    {
+      "project": "Terrarium",
+      "repo": "ponli550/SDP-Terrarium",
+      "url": "https://ponli550.github.io/SDP-Terrarium/#/analysis",
+      "result": "verified_bounded_reactive_illustrative_model",
+      "actions": [
+        {
+          "label": "Try without signing in → Save home → Explore the township → Analysis",
+          "observed": "Reached guest analysis workspace without email; settings browser-local"
+        },
+        {
+          "label": "Rooftop solar none; two ArrowRight keys while focused",
+          "observed": "Solar2kWp; electricity476→293kWh; billRM168→RM75; solaroffset0→182kWh; score63→70"
+        }
+      ],
+      "observedValues": {
+        "solarKwp": { "before": 0, "after": 2 },
+        "electricityKwh": { "before": 476, "after": 293 },
+        "billMyr": { "before": 168, "after": 75 },
+        "solarOffsetKwh": { "before": 0, "after": 182 },
+        "homeScore": { "before": 63, "after": 70 },
+        "status": "ILLUSTRATIVE"
+      },
+      "screenshots": [
+        { "file": "terrarium-analysis.png", "viewport": "desktop", "inspected": true },
+        { "file": "terrarium-solar-changed.png", "viewport": "desktop", "inspected": true },
+        { "file": "terrarium-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Analysis choices readable but document599px wide at390px viewport; results extend right. Measured via document.documentElement.scrollWidth.",
+      "limits": [
+        "No energy/tariff/ecological validation",
+        "No complete month, bill matching, lot comparison or MCP test",
+        "One favicon404"
+      ],
+      "jevTarget": {
+        "url": "https://ponli550.github.io/SDP-Terrarium/#/analysis",
+        "steps": [
+          "Try without signing in if prompted",
+          "Save home if wizard shown",
+          "Explore the township if first-look modal shown",
+          "Analysis",
+          "Focus Rooftop solar none and press ArrowRight twice"
+        ],
+        "assertVisible": "2 kWp and293kWh"
+      }
+    },
+    {
+      "project": "Surplus AI",
+      "repo": "kavee05/surplus-ai",
+      "url": "https://surplus-ai.vercel.app/app/radar",
+      "result": "verified_bounded_reactive_decision_and_working",
+      "actions": [
+        {
+          "label": "Surplus Radar",
+          "observed": "Pre-Order Check at1000pieces showed800forecast/200new/RM11098saving"
+        },
+        {
+          "label": "Quantity (pcs)=500; Conservative mode on",
+          "observed": "Changed to500forecast/0new/RM6898saving"
+        },
+        {
+          "label": "Why this recommendation → Calculation (10 steps)",
+          "observed": "Expanded working table, evidence strength, missing checks, alternatives and assumptions; explicitly deterministic/noAI model"
+        }
+      ],
+      "observedValues": {
+        "initial": {
+          "quantityPcs": 1000,
+          "reserveForecastPcs": 800,
+          "orderNewPcs": 200,
+          "estimatedSavingMyr": 11098
+        },
+        "changed": {
+          "quantityPcs": 500,
+          "conservative": true,
+          "reserveForecastPcs": 500,
+          "orderNewPcs": 0,
+          "estimatedSavingMyr": 6898
+        },
+        "status": "Simulated data; assumptions unvalidated"
+      },
+      "screenshots": [
+        { "file": "surplus-radar.png", "viewport": "desktop", "inspected": true },
+        { "file": "surplus-calculation.png", "viewport": "desktop", "inspected": true },
+        { "file": "surplus-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Settled Radar stacks cards/inputs with bottom navigation. Loading skeleton capture replaced after Pre-Order Check appeared. Recommendation below fold not fully inspected.",
+      "limits": [
+        "No AI prompt, hold, rejection, transfer or inventory mutation",
+        "No supplier/forecast/carbon validation",
+        "Displayed arithmetic consistency is not real-world model validation"
+      ],
+      "jevTarget": {
+        "url": "https://surplus-ai.vercel.app/app/radar",
+        "steps": [
+          "Fill Quantity (pcs) with500",
+          "Enable Conservative mode",
+          "Why this recommendation",
+          "Calculation (10 steps)"
+        ],
+        "assertVisible": "500forecast/0new and working table; do not Review and hold"
+      }
+    },
+    {
+      "project": "SihatTown",
+      "repo": "jodika-bit/sihattown",
+      "url": "https://jodika-bit.github.io/sihattown/",
+      "result": "verified_bounded_multi_role_sample_story",
+      "actions": [
+        {
+          "label": "3 SihatTown spots the trend",
+          "observed": "Resident Keep watch/amber reading, trend explanation and caregiver alert displayed"
+        },
+        {
+          "label": "7 Clinic follow-up",
+          "observed": "Resident follow-up state and structured seven-day clinic summary displayed; clinic tab selected"
+        }
+      ],
+      "screenshots": [
+        { "file": "sihattown-trend.png", "viewport": "desktop", "inspected": true },
+        { "file": "sihattown-clinic.png", "viewport": "desktop", "inspected": true },
+        { "file": "sihattown-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Scenario selector and controls stack legibly above phone; resident/connected views require further scrolling and were not fully tested.",
+      "limits": [
+        "Simulated people/readings/precinct figures",
+        "No reading submit, acknowledgement or appointment action",
+        "No medical-rule validation",
+        "One favicon404"
+      ],
+      "jevTarget": {
+        "url": "https://jodika-bit.github.io/sihattown/",
+        "steps": ["3 SihatTown spots the trend", "7 Clinic follow-up"],
+        "assertVisible": "Partner clinic summary; do not Book teleconsult"
+      }
+    },
+    {
+      "project": "Kita4U",
+      "repo": "jeremytey/kita4u",
+      "url": "https://kita4u.vercel.app/",
+      "result": "verified_bounded_demo_entry_and_language",
+      "actions": [
+        {
+          "label": "Try as Mak Cik Aminah → Skip setup · Try demo",
+          "observed": "Resident check-in screen and sample Circle displayed; subsequent entry reused completed local setup"
+        },
+        {
+          "label": "BM",
+          "observed": "Visible labels changed to Selamat pagi, Masa untuk anda lapor diri, Saya okey and Bulatan anda"
+        }
+      ],
+      "screenshots": [
+        { "file": "kita4u-demo.png", "viewport": "desktop", "inspected": true },
+        { "file": "kita4u-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Large BM labels and primary action readable; fixed demo-controls pill overlaps lower Circle area in captured viewport.",
+      "limits": [
+        "No check-in, invitation, escalation, helper response or emergency operation",
+        "Sample Circle/time and proposed township role labelled"
+      ],
+      "jevTarget": {
+        "url": "https://kita4u.vercel.app/",
+        "steps": ["Try as Mak Cik Aminah", "Skip setup · Try demo if shown", "BM"],
+        "assertVisible": "Saya okey; do not activate check-in"
+      }
+    },
+    {
+      "project": "PinjamLah",
+      "repo": "Shahridan04/PinjamLah",
+      "url": "https://pinjam-lah.vercel.app/welcome",
+      "result": "verified_bounded_category_and_item_inspection",
+      "actions": [
+        {
+          "label": "Already a neighbour? Enter demo",
+          "observed": "Opened Aina sample resident home"
+        },
+        {
+          "label": "Power Tools",
+          "observed": "Category URL /explore?category=Power%20Tools showed one nearby drill"
+        },
+        {
+          "label": "18V Cordless Drill Driver…",
+          "observed": "Opened /items/DR-014 with availability, condition, kit/safety text and calendar; past dates disabled"
+        }
+      ],
+      "screenshots": [
+        { "file": "pinjamlah-tools.png", "viewport": "desktop", "inspected": true },
+        { "file": "pinjamlah-detail.png", "viewport": "desktop", "inspected": true },
+        { "file": "pinjamlah-mobile.png", "viewport": "mobile", "inspected": true }
+      ],
+      "mobileObservation": "Image, availability/condition, guidance and calendar stack within phone width; persistent bottom navigation visible.",
+      "limits": [
+        "No date selection, reservation, return, lending, scan or payment",
+        "Inventory and impact estimates unvalidated"
+      ],
+      "jevTarget": {
+        "url": "https://pinjam-lah.vercel.app/welcome",
+        "steps": ["Already a neighbour? Enter demo", "Power Tools", "18V Cordless Drill Driver…"],
+        "assertVisible": "Calendar and Available; do not Borrow this item"
+      }
+    }
+  ],
+  "livingShieldComparison": {
+    "sourceFiles": [
+      "app/src/township/TownshipView.tsx",
+      "app/src/platform/GuidedDemo.tsx",
+      "app/src/platform/EvidenceView.tsx",
+      "app/src/platform/readableBrief.ts",
+      "app/src/livingshield/LivingShieldView.tsx"
+    ],
+    "existingFeatures": [
+      "State-aware four-step walkthrough",
+      "Matching-forcing before/after terrain surface-flow comparison",
+      "Declared sources/model limits and water-balance results",
+      "Actual physical module inspection and concept quantities",
+      "Combined JSON and readable evidence handover"
+    ],
+    "candidateGapsNotImplementedByThisAudit": [
+      "Compact result-specific explanation of capture/capacity/remaining water/uncertainty using actual solver outputs",
+      "Explicitly local pilot-review status, proposed reviewer and required site evidence",
+      "Reviewed Bahasa Malaysia guided narrative and brief summary"
+    ],
+    "limit": "Source comparison and existing native River QA do not constitute retesting every local application workflow; no uniqueness or winning probability claimed."
+  }
+}

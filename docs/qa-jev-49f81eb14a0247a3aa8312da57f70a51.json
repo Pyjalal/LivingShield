@@ -1,0 +1,105 @@
+{
+  "id": "49f81eb14a0247a3aa8312da57f70a51",
+  "status": "completed",
+  "request": {
+    "mode": "qa",
+    "goal": "Verify landing to River Lab at desktop and mobile widths.",
+    "url": "http://127.0.0.1:5180/",
+    "query": "",
+    "hackathon": "",
+    "category": "",
+    "max_steps": 5,
+    "max_pages": 1,
+    "timeout_seconds": 180,
+    "viewports": [
+      1440,
+      390
+    ],
+    "scenarios": [
+      {
+        "name": "Open native module",
+        "goal": "Click Inspect the module. Verify A place for roots is visible, then stop.",
+        "assertions": [
+          {
+            "kind": "text_present",
+            "value": "A place for roots."
+          }
+        ]
+      }
+    ],
+    "assertions": [],
+    "field_values": {},
+    "use_planner": false,
+    "human_wait_seconds": 90,
+    "allowed_actions": [
+      "click",
+      "fill",
+      "select",
+      "scroll",
+      "wait"
+    ]
+  },
+  "coverage": [
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Open native module",
+      "status": "verified",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "A place for roots.",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 390,
+      "scenario": "Open native module",
+      "status": "verified",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "A place for roots.",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "events": [
+    {
+      "type": "action",
+      "time": "2026-10-21T04:42:23.859807+00:00",
+      "step": 1,
+      "operation": "CLICK",
+      "label": "Inspect the module",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 520,
+      "text_helper": null,
+      "screenshot": "/api/runs/49f81eb14a0247a3aa8312da57f70a51/artifacts/frame-0005.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T04:42:29.575321+00:00",
+      "step": 2,
+      "operation": "CLICK",
+      "label": "Inspect the module",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 253,
+      "text_helper": null,
+      "screenshot": "/api/runs/49f81eb14a0247a3aa8312da57f70a51/artifacts/frame-0010.png"
+    },
+    {
+      "type": "finished",
+      "time": "2026-10-21T04:42:30.147979+00:00",
+      "status": "completed",
+      "message": "Run completed"
+    }
+  ],
+  "screenshot": "/api/runs/49f81eb14a0247a3aa8312da57f70a51/artifacts/frame-0011.png",
+  "error": null
+}

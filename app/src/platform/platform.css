@@ -1,0 +1,301 @@
+.ls-evidence {
+  overflow: auto;
+  width: 100%;
+  padding: 42px max(24px, calc((100% - 1200px) / 2));
+  color: var(--tt-text);
+  background: var(--tt-bg);
+}
+.ls-evidence-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 36px;
+  margin-bottom: 32px;
+}
+.ls-evidence h1 {
+  font: 400 clamp(32px, 4vw, 52px)/1.08 var(--tt-font-heading);
+  letter-spacing: -1.8px;
+  margin: 8px 0 14px;
+}
+.ls-evidence-heading > div {
+  max-width: 700px;
+}
+.ls-evidence p {
+  line-height: 1.7;
+  color: var(--tt-muted);
+}
+.ls-evidence-heading label {
+  display: grid;
+  gap: 6px;
+  min-width: 230px;
+  font-size: 12px;
+}
+.ls-evidence select {
+  padding: 10px;
+  background: var(--tt-surface-raised);
+  color: var(--tt-text);
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 5px;
+}
+.ls-evidence-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.ls-decision-intent {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 24px 26px;
+  margin-bottom: 26px;
+  border: 1px solid var(--tt-border-strong);
+  border-left: 4px solid var(--tt-accent);
+  background: var(--tt-surface-muted);
+}
+.ls-decision-intent > div { flex: 1; min-width: 0; }
+.ls-decision-intent > a { flex-shrink: 0; color: var(--tt-accent); font-size: 12px; line-height: 1.7; }
+.ls-decision-intent p { font-size: 12px; }
+@media (max-width: 700px) {
+  .ls-decision-intent { flex-direction: column; align-items: flex-start; padding: 20px; gap: 12px; }
+}
+.ls-evidence-grid > article {
+  background: var(--tt-surface);
+  border: 1px solid var(--tt-border);
+  border-radius: 8px;
+  padding: 26px;
+}
+.ls-evidence h2 {
+  font: 400 29px/1.15 var(--tt-font-heading);
+  margin: 8px 0 14px;
+  letter-spacing: -0.6px;
+}
+.ls-evidence h3 {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.ls-evidence img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 4px 0 12px;
+}
+.ls-evidence dl {
+  margin: 20px 0;
+}
+.ls-evidence dl > div {
+  padding: 12px 0;
+  border-top: 1px solid var(--tt-border);
+}
+.ls-evidence dt {
+  color: var(--tt-muted);
+  font-size: 12px;
+}
+.ls-evidence dd {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+.ls-evidence small {
+  display: block;
+  color: var(--tt-muted);
+  line-height: 1.7;
+}
+.ls-evidence-empty {
+  padding: 25px 0;
+}
+.ls-evidence button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 42px;
+  padding: 10px 16px;
+  margin-top: 18px;
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 4px;
+  color: var(--tt-accent);
+  background: var(--tt-accent-soft);
+  cursor: pointer;
+  font: 600 13px var(--tt-font);
+}
+.ls-evidence .ls-evidence-note {
+  font-size: 12px;
+  margin-top: 12px;
+}
+.ls-evidence-handover {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0;
+  margin: 25px 0;
+  border-block: 1px solid var(--tt-border);
+}
+.ls-evidence-handover > div {
+  max-width: 770px;
+}
+.ls-evidence-actions {
+  display: grid;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.ls-evidence .ls-evidence-actions button {
+  margin-top: 0;
+}
+.ls-evidence .ls-evidence-primary {
+  background: var(--tt-accent);
+  color: var(--tt-accent-contrast);
+  flex-shrink: 0;
+}
+.ls-evidence-sources > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 24px 0 36px;
+}
+.ls-evidence-sources p {
+  font-size: 13px;
+}
+.ls-evidence a {
+  display: inline-block;
+  color: var(--tt-accent);
+  margin-top: 10px;
+  text-decoration: underline;
+}
+.ls-demo-bar {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 9px 20px;
+  background: var(--tt-accent-soft);
+  color: var(--tt-text);
+  border-bottom: 1px solid var(--tt-border);
+  flex-shrink: 0;
+  font-size: 12px;
+}
+.ls-demo-bar > strong {
+  white-space: nowrap;
+}
+.ls-demo-bar > div {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  min-width: 0;
+}
+.ls-demo-bar button {
+  background: var(--tt-surface);
+  color: var(--tt-text);
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 4px;
+  padding: 7px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ls-demo-bar button[aria-pressed='true'] {
+  background: var(--tt-accent);
+  color: var(--tt-accent-contrast);
+}
+.ls-demo-bar > button:last-child {
+  margin-left: auto;
+}
+.ls-demo-bar > button {
+  flex-shrink: 0;
+}
+.ls-guide {
+  flex-shrink: 0;
+}
+.ls-demo-coach {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 10px 20px;
+  border-bottom: 1px solid var(--tt-border);
+  color: var(--tt-text);
+  background: var(--tt-surface);
+  font-size: 12px;
+}
+.ls-demo-coach strong {
+  font-weight: 650;
+}
+.ls-demo-coach p {
+  margin-top: 3px;
+  line-height: 1.5;
+}
+.ls-demo-coach small {
+  display: block;
+  margin-top: 3px;
+  color: var(--tt-muted);
+  font-size: 11px;
+}
+.ls-demo-coach button {
+  flex-shrink: 0;
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 4px;
+  background: var(--tt-accent);
+  color: var(--tt-accent-contrast);
+  padding: 9px 12px;
+  cursor: pointer;
+}
+.ls-demo-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.ls-demo-coach .ls-demo-jump {
+  background: var(--tt-surface);
+  color: var(--tt-accent);
+}
+.app button.tab-brand {
+  background: transparent;
+  border: 0;
+  border-right: 1px solid #395952;
+  cursor: pointer;
+  font-family: var(--tt-font);
+}
+@media (max-width: 850px) {
+  .ls-evidence {
+    padding: 28px 20px;
+  }
+  .ls-evidence-heading {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+  .ls-evidence-grid {
+    grid-template-columns: 1fr;
+  }
+  .ls-evidence-sources > div {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .ls-evidence-handover {
+    flex-direction: column;
+    align-items: start;
+    gap: 6px;
+  }
+  .ls-demo-bar {
+    padding: 8px;
+    gap: 8px;
+  }
+  .ls-demo-bar > strong {
+    display: none;
+  }
+  .ls-demo-bar button {
+    padding: 7px;
+    font-size: 11px;
+  }
+  .ls-demo-coach {
+    padding: 9px 12px;
+    gap: 12px;
+    font-size: 11px;
+  }
+  .ls-demo-coach button {
+    max-width: 94px;
+    font-size: 11px;
+    padding: 8px;
+  }
+  .ls-demo-actions {
+    flex-direction: column;
+  }
+}

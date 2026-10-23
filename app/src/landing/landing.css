@@ -1,0 +1,1047 @@
+.ls-home {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: clip;
+  background: var(--tt-bg);
+  color: var(--tt-text);
+  font-family: var(--tt-font);
+  scroll-behavior: smooth;
+}
+
+.ls-home button {
+  cursor: pointer;
+}
+.ls-home button svg {
+  flex-shrink: 0;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.ls-home button:focus-visible,
+.ls-home a:focus-visible,
+.ls-home video:focus-visible {
+  outline: 3px solid var(--tt-warning);
+  outline-offset: 5px;
+}
+.ls-home button {
+  font: inherit;
+}
+.ls-home h1,
+.ls-home h2,
+.ls-home h3,
+.ls-home p {
+  margin: 0;
+}
+.ls-home h1,
+.ls-home h2 {
+  font-family: var(--tt-font-heading);
+  font-weight: 400;
+}
+.ls-home em {
+  font-weight: inherit;
+}
+.ls-home-eyebrow {
+  font-size: 10px;
+  font-weight: 650;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  color: var(--tt-muted);
+}
+.ls-home-eyebrow > span {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--tt-accent);
+  border-radius: 50%;
+  margin: 0 7px 1px 0;
+}
+.ls-home-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  min-height: min(700px, calc(100dvh - 96px));
+  padding: 28px 32px 32px;
+  gap: 30px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.ls-home-hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px 8px 24px 20px;
+  align-items: flex-start;
+}
+.ls-home h1 {
+  font-size: clamp(40px, 4.2vw, 70px);
+  line-height: 0.99;
+  letter-spacing: -0.055em;
+  margin: 23px 0;
+}
+.ls-home h1 em {
+  color: var(--tt-accent);
+}
+.ls-home-intro {
+  font-size: clamp(14px, 1.1vw, 17px);
+  line-height: 1.75;
+  color: var(--tt-muted);
+  max-width: 460px;
+}
+.ls-home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 28px 0 24px;
+}
+.ls-home-button {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 12px 18px;
+  border-radius: 4px;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  text-align: left;
+  border: 1px solid var(--tt-border-strong);
+  transition:
+    background 0.16s,
+    transform 0.16s;
+}
+.ls-home-button:hover {
+  transform: translateY(-2px);
+}
+.ls-home-button-primary {
+  background: var(--tt-accent);
+  border-color: var(--tt-accent);
+  color: var(--tt-accent-contrast);
+}
+.ls-home-button-secondary {
+  background: transparent;
+  color: var(--tt-text);
+}
+.ls-home-button-secondary:hover {
+  background: var(--tt-accent-soft);
+}
+.ls-home-demo-link {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--tt-text);
+  background: none;
+  border: 0;
+  min-height: 38px;
+  text-align: left;
+  font-size: 12px !important;
+}
+.ls-home-play {
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-size: 9px;
+  padding-left: 2px;
+}
+.ls-home-demo-caption {
+  color: var(--tt-muted);
+  padding-left: 9px;
+  border-left: 1px solid var(--tt-border);
+  font-size: 10px;
+}
+.ls-home .ls-home-hero-note {
+  margin-top: 25px;
+  color: var(--tt-subtle);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.ls-home-hero-visual {
+  margin: 0;
+  position: relative;
+  min-height: 570px;
+  border-radius: 5px;
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--tt-scene-bg);
+}
+.ls-home-hero-visual > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: 45% 50%;
+}
+.ls-home-hero-visual::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    #10272b50 0%,
+    transparent 32%,
+    transparent 50%,
+    #10272be6 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+.ls-home-visual-label {
+  position: absolute;
+  left: 22px;
+  top: 23px;
+  z-index: 2;
+  color: #fff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  background: #10272bd9;
+  padding: 8px 10px;
+  border-radius: 3px;
+}
+.ls-home-visual-label > span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #d8edac;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.ls-home-hero-visual figcaption {
+  position: absolute;
+  z-index: 2;
+  bottom: 28px;
+  left: 27px;
+  right: 27px;
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  color: #fff;
+}
+.ls-home-hero-visual figcaption > span {
+  font: 400 clamp(22px, 2.15vw, 34px)/1.15 var(--tt-font-heading);
+  letter-spacing: -0.6px;
+}
+.ls-home-hero-visual figcaption strong {
+  font-weight: 400;
+}
+.ls-home-hero-visual figcaption small {
+  font-size: 9px;
+  line-height: 1.6;
+  margin-left: auto;
+  max-width: 170px;
+  color: #e7eee4;
+}
+.ls-home-hero-mark {
+  position: absolute;
+  right: 20px;
+  top: 68px;
+  width: 85px;
+  height: 78px;
+  stroke: #e7eee4a8;
+  stroke-width: 0.7;
+  z-index: 2;
+}
+.ls-home-decision-facts > div > strong {
+  font: 650 11px/1.6 var(--tt-font);
+  letter-spacing: 0.08em;
+  max-width: 76px;
+}
+.ls-home-sdp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px;
+  padding: 54px max(56px, calc((100vw - 1388px) / 2));
+  border-bottom: 1px solid var(--tt-border);
+  background: var(--tt-surface-muted);
+}
+.ls-home-sdp h2 { font-size: clamp(28px, 3vw, 42px); margin-top: 14px; }
+.ls-home-sdp p { color: var(--tt-muted); line-height: 1.8; font-size: 14px; }
+.ls-home-sdp .ls-home-model-note { margin-top: 16px; }
+.ls-home-source-link { display: inline-block; color: var(--tt-accent); font-size: 11px; margin-top: 16px; line-height: 1.6; }
+.ls-home-preview-credit { display: block; color: var(--tt-subtle); font-size: 9px; line-height: 1.6; margin-top: 16px; }
+@media (max-width: 700px) {
+  .ls-home-sdp { grid-template-columns: 1fr; gap: 22px; padding: 32px 22px; }
+}
+.ls-home-facts {
+  border-top: 1px solid var(--tt-border);
+  border-bottom: 1px solid var(--tt-border);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 0 max(32px, calc((100vw - 1600px) / 2));
+  background: var(--tt-surface);
+}
+.ls-home-facts > div {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  padding: 26px 24px;
+  border-right: 1px solid var(--tt-border);
+}
+.ls-home-facts > div:last-child {
+  border-right: 0;
+}
+.ls-home-facts strong {
+  font: 400 clamp(30px, 3vw, 45px)/1 var(--tt-font-heading);
+  color: var(--tt-accent);
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+.ls-home-facts strong small {
+  font: 12px/1 var(--tt-font);
+  letter-spacing: 0;
+  padding-left: 3px;
+}
+.ls-home-facts > div > span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.ls-home-facts span small {
+  color: var(--tt-muted);
+  font-size: 10px;
+  font-weight: 400;
+}
+.ls-home-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 45px;
+  margin-bottom: 34px;
+}
+.ls-home h2 {
+  font-size: clamp(32px, 3.25vw, 50px);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+.ls-home-section-heading h2 {
+  margin-top: 12px;
+}
+.ls-home-section-heading > p {
+  max-width: 360px;
+  color: var(--tt-muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.ls-home-workflow,
+.ls-home-film,
+.ls-home-toolbox {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 82px 56px;
+}
+.ls-home-workflow-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.9fr) minmax(0, 1.6fr);
+  border-top: 1px solid var(--tt-border);
+  border-bottom: 1px solid var(--tt-border);
+}
+.ls-home-steps {
+  display: grid;
+  border-right: 1px solid var(--tt-border);
+  padding: 12px 30px 12px 0;
+}
+.ls-home-steps button {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--tt-border);
+  padding: 19px 12px;
+  min-height: 64px;
+  color: var(--tt-muted);
+  text-align: left;
+}
+.ls-home-steps button:last-child {
+  border-bottom: 0;
+}
+.ls-home-steps button > span {
+  font-size: 10px;
+  color: var(--tt-subtle);
+}
+.ls-home-steps button > strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+.ls-home-steps button > svg {
+  margin-left: auto;
+  transition: transform 0.16s;
+}
+.ls-home-steps button[aria-pressed='true'] {
+  color: var(--tt-accent);
+  background: var(--tt-accent-soft);
+  border-radius: 3px;
+}
+.ls-home-steps button[aria-pressed='true'] > strong {
+  font-weight: 650;
+}
+.ls-home-steps button:hover > svg {
+  transform: translateX(4px);
+}
+.ls-home-step-detail {
+  display: flex;
+  align-items: center;
+  padding: 45px 38px;
+  gap: 30px;
+  min-height: 290px;
+}
+.ls-home-step-number {
+  font: italic 100px/0.9 var(--tt-font-heading);
+  color: var(--tt-border-strong);
+  opacity: 0.65;
+  letter-spacing: -9px;
+}
+.ls-home-step-detail h3 {
+  font: 400 29px/1.15 var(--tt-font-heading);
+  letter-spacing: -0.6px;
+  margin: 11px 0 15px;
+}
+.ls-home-step-detail > div > p:not(.ls-home-eyebrow) {
+  color: var(--tt-muted);
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 460px;
+}
+.ls-home-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border: 0;
+  border-bottom: 1px solid var(--tt-border-strong);
+  background: none;
+  color: var(--tt-accent);
+  padding: 7px 0;
+  margin-top: 16px;
+  font-size: 12px !important;
+  min-height: 35px;
+  text-align: left;
+}
+.ls-home-twin {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.2fr);
+  gap: 80px;
+  padding: 65px max(56px, calc((100vw - 1388px) / 2));
+  background: var(--tt-accent-soft);
+  border-top: 1px solid var(--tt-border);
+  border-bottom: 1px solid var(--tt-border);
+}
+.ls-home-twin-heading h2 {
+  margin: 18px 0 25px;
+  font-size: clamp(48px, 5vw, 72px);
+}
+.ls-home-twin-heading > p:not(.ls-home-eyebrow) {
+  color: var(--tt-muted);
+  line-height: 1.8;
+  font-size: 14px;
+  max-width: 360px;
+  margin-bottom: 28px;
+}
+.ls-home-twin-features > article {
+  display: flex;
+  gap: 23px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--tt-border-strong);
+}
+.ls-home-twin-features > article:first-child {
+  padding-top: 0;
+}
+.ls-home-twin-features article > span {
+  font-size: 10px;
+  padding-top: 5px;
+  color: var(--tt-muted);
+}
+.ls-home-twin-features h3 {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  margin-bottom: 10px;
+}
+.ls-home-twin-features article p {
+  font-size: 13px;
+  color: var(--tt-muted);
+  line-height: 1.8;
+  max-width: 490px;
+}
+.ls-home-model-note {
+  font-size: 10px;
+  color: var(--tt-muted);
+  line-height: 1.7;
+  margin-top: 19px !important;
+}
+.ls-home-river {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 82px 56px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+.ls-home-river-drawing {
+  background: var(--tt-surface-muted);
+  border: 1px solid var(--tt-border);
+  padding: 27px;
+  border-radius: 4px;
+}
+.ls-home-module-drawing {
+  width: 100%;
+  display: block;
+  max-height: 330px;
+  stroke: var(--tt-border-strong);
+  stroke-width: 1.3;
+  margin: 20px 0;
+}
+.ls-home-drawing-grid {
+  stroke: var(--tt-border);
+  stroke-width: 0.45;
+}
+.ls-home-drawing-outer {
+  fill: var(--tt-surface-raised);
+  stroke: var(--tt-accent);
+  stroke-width: 2;
+}
+.ls-home-drawing-inner {
+  fill: var(--tt-surface-muted);
+  stroke: var(--tt-accent);
+  stroke-width: 1.6;
+}
+.ls-home-drawing-dimension {
+  stroke: var(--tt-muted);
+  stroke-dasharray: 3 3;
+  stroke-width: 0.8;
+}
+.ls-home-drawing-leaf {
+  stroke: var(--tt-accent);
+  stroke-width: 2;
+  fill: var(--tt-accent-soft);
+}
+.ls-home-drawing-caption {
+  border-top: 1px solid var(--tt-border);
+  padding-top: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.ls-home-drawing-caption strong {
+  font-weight: 500;
+  font-size: 14px;
+}
+.ls-home-drawing-caption span {
+  color: var(--tt-muted);
+  font-size: 10px;
+}
+.ls-home-river-copy h2 {
+  margin: 17px 0 23px;
+}
+.ls-home-river-copy > p:not(.ls-home-eyebrow, .ls-home-model-note) {
+  font-size: 14px;
+  color: var(--tt-muted);
+  line-height: 1.85;
+}
+.ls-home-river-copy ul {
+  list-style: none;
+  margin: 26px 0;
+  padding: 0;
+}
+.ls-home-river-copy li {
+  padding: 11px 0;
+  border-bottom: 1px solid var(--tt-border);
+  font-size: 12px;
+  line-height: 1.6;
+  display: flex;
+  gap: 13px;
+}
+.ls-home-river-copy li span {
+  font-size: 9px;
+  color: var(--tt-subtle);
+  padding-top: 2px;
+}
+.ls-home-film {
+  padding-top: 0;
+}
+.ls-home-film video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--tt-border);
+  border-radius: 4px;
+  background: var(--tt-nav-bg);
+  max-height: 650px;
+}
+.ls-home-toolbox {
+  border-top: 1px solid var(--tt-border);
+  padding-top: 65px;
+}
+.ls-home-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid var(--tt-border);
+}
+.ls-home-tools-grid > button {
+  display: flex;
+  text-align: left;
+  gap: 17px;
+  align-items: flex-start;
+  border: 0;
+  border-bottom: 1px solid var(--tt-border);
+  background: none;
+  color: var(--tt-text);
+  padding: 27px 20px 27px 0;
+  min-width: 0;
+  min-height: 130px;
+}
+.ls-home-tools-grid > button > svg:first-child {
+  color: var(--tt-accent);
+  margin-top: 2px;
+}
+.ls-home-tools-grid > button > svg:last-child {
+  margin-left: auto;
+  margin-top: 5px;
+}
+.ls-home-tools-grid > button > span {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ls-home-tools-grid strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.ls-home-tools-grid small {
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--tt-muted);
+  max-width: 245px;
+}
+.ls-home-tools-grid > button:hover {
+  background: var(--tt-accent-soft);
+}
+.ls-home-additional-tools {
+  display: flex;
+  gap: 30px;
+  margin-top: 22px;
+}
+.ls-home-additional-tools button {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  border: 0;
+  background: none;
+  color: var(--tt-accent);
+  font-size: 12px;
+  min-height: 36px;
+  text-align: left;
+}
+.ls-home-evidence {
+  padding: 60px max(56px, calc((100vw - 1388px) / 2));
+  background: var(--tt-surface-muted);
+  border-top: 1px solid var(--tt-border);
+  border-bottom: 1px solid var(--tt-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+.ls-home-evidence h2 {
+  margin: 15px 0 20px;
+}
+.ls-home-evidence h2 em {
+  color: var(--tt-accent);
+}
+.ls-home-evidence > div > p:not(.ls-home-eyebrow) {
+  color: var(--tt-muted);
+  font-size: 13px;
+  line-height: 1.8;
+  max-width: 660px;
+}
+.ls-home-evidence > button {
+  flex-shrink: 0;
+}
+.ls-home-footer {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 33px 56px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+.ls-home-footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ls-home-footer strong {
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: -0.8px;
+}
+.ls-home-footer span,
+.ls-home-footer > p {
+  font-size: 10px;
+  color: var(--tt-muted);
+  line-height: 1.7;
+}
+.ls-home-footer .ls-home-text-link {
+  margin: 0;
+}
+
+@media (min-width: 1100px) and (prefers-reduced-motion: no-preference) {
+  .ls-home-hero-copy {
+    animation: ls-home-enter 0.55s ease both;
+  }
+  .ls-home-hero-visual {
+    animation: ls-home-enter 0.75s ease both;
+  }
+  @keyframes ls-home-enter {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .ls-home-hero {
+    gap: 20px;
+    padding: 20px;
+    min-height: 610px;
+  }
+  .ls-home-hero-copy {
+    padding-left: 8px;
+  }
+  .ls-home-hero-visual {
+    min-height: 560px;
+  }
+  .ls-home-hero-visual figcaption {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    left: 20px;
+    right: 20px;
+  }
+  .ls-home-hero-visual figcaption small {
+    margin-left: 0;
+  }
+  .ls-home-facts {
+    padding: 0 20px;
+  }
+  .ls-home-facts > div {
+    padding: 23px 16px;
+    gap: 12px;
+  }
+  .ls-home-workflow,
+  .ls-home-river,
+  .ls-home-film,
+  .ls-home-toolbox {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .ls-home-twin,
+  .ls-home-evidence {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .ls-home-twin,
+  .ls-home-river {
+    gap: 40px;
+  }
+  .ls-home-step-detail {
+    padding: 35px 25px;
+    gap: 23px;
+  }
+  .ls-home-step-number {
+    font-size: 75px;
+  }
+  .ls-home-section-heading {
+    gap: 25px;
+  }
+  .ls-home-section-heading > p {
+    max-width: 300px;
+    font-size: 13px;
+  }
+  .ls-home-footer {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 760px) {
+  .ls-home-hero {
+    grid-template-columns: 1fr;
+    padding: 24px 20px 20px;
+    gap: 24px;
+  }
+  .ls-home-hero-copy {
+    padding: 10px 0 0;
+  }
+  .ls-home h1 {
+    font-size: clamp(43px, 9.3vw, 68px);
+    margin: 20px 0;
+    letter-spacing: -0.05em;
+  }
+  .ls-home-intro {
+    font-size: 14px;
+    max-width: 540px;
+  }
+  .ls-home-hero-actions {
+    width: 100%;
+    margin: 23px 0 17px;
+    gap: 9px;
+  }
+  .ls-home-hero-actions > button {
+    flex: 1 1 auto;
+  }
+  .ls-home-button {
+    padding: 12px 14px;
+    gap: 13px;
+    min-height: 46px;
+  }
+  .ls-home-demo-link {
+    font-size: 12px !important;
+    min-height: 44px;
+  }
+  .ls-home-demo-caption {
+    font-size: 9px;
+  }
+  .ls-home .ls-home-hero-note {
+    margin-top: 14px;
+  }
+  .ls-home-hero-visual {
+    min-height: 390px;
+  }
+  .ls-home-hero-visual > img {
+    object-position: 46% 50%;
+  }
+  .ls-home-visual-label {
+    top: 15px;
+    left: 14px;
+    font-size: 8px;
+    letter-spacing: 0.08em;
+    max-width: calc(100% - 28px);
+  }
+  .ls-home-hero-visual figcaption {
+    bottom: 20px;
+    left: 18px;
+    right: 18px;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 4px;
+    background: #10272bf2;
+  }
+  .ls-home-hero-visual figcaption > span {
+    font-size: 23px;
+  }
+  .ls-home-hero-visual figcaption small {
+    max-width: 230px;
+  }
+  .ls-home-hero-mark {
+    right: 13px;
+    top: 68px;
+    width: 65px;
+    height: 62px;
+  }
+  .ls-home-facts {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+  .ls-home-facts > div {
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--tt-border);
+    gap: 20px;
+  }
+  .ls-home-facts > div:last-child {
+    border-bottom: 0;
+  }
+  .ls-home-facts strong {
+    width: 85px;
+    font-size: 38px;
+  }
+  .ls-home-facts > div > span {
+    font-size: 13px;
+  }
+  .ls-home-facts span small {
+    font-size: 10px;
+  }
+  .ls-home-workflow,
+  .ls-home-river,
+  .ls-home-film,
+  .ls-home-toolbox {
+    padding: 50px 20px;
+  }
+  .ls-home-section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 19px;
+    margin-bottom: 26px;
+  }
+  .ls-home-section-heading > p {
+    max-width: 540px;
+    font-size: 13px;
+  }
+  .ls-home h2 {
+    font-size: 36px;
+  }
+  .ls-home-workflow-layout {
+    grid-template-columns: 1fr;
+  }
+  .ls-home-steps {
+    border-right: 0;
+    padding: 10px 0;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+  }
+  .ls-home-steps button {
+    gap: 8px;
+    min-height: 57px;
+    padding: 13px 10px;
+    border: 1px solid var(--tt-border);
+    border-radius: 3px;
+  }
+  .ls-home-steps button:last-child {
+    border-bottom: 1px solid var(--tt-border);
+  }
+  .ls-home-steps button > strong {
+    font-size: 11px;
+  }
+  .ls-home-steps button > span {
+    font-size: 9px;
+  }
+  .ls-home-steps button > svg {
+    width: 13px;
+  }
+  .ls-home-step-detail {
+    border-top: 1px solid var(--tt-border);
+    padding: 27px 0;
+    gap: 19px;
+    min-height: 270px;
+  }
+  .ls-home-step-number {
+    font-size: 69px;
+    align-self: flex-start;
+    margin-top: 28px;
+    min-width: 66px;
+    letter-spacing: -5px;
+  }
+  .ls-home-step-detail h3 {
+    font-size: 25px;
+  }
+  .ls-home-step-detail > div > p:not(.ls-home-eyebrow) {
+    font-size: 12px;
+  }
+  .ls-home-twin {
+    padding: 45px 20px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+  .ls-home-twin-heading h2 {
+    font-size: 53px;
+    margin-bottom: 19px;
+  }
+  .ls-home-twin-heading > p:not(.ls-home-eyebrow) {
+    max-width: 540px;
+  }
+  .ls-home-twin-features > article {
+    gap: 15px;
+    padding: 19px 0;
+  }
+  .ls-home-twin-features h3 {
+    font-size: 17px;
+  }
+  .ls-home-twin-features article p {
+    font-size: 12px;
+  }
+  .ls-home-river {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .ls-home-river-drawing {
+    padding: 21px;
+  }
+  .ls-home-module-drawing {
+    max-height: 280px;
+  }
+  .ls-home-river-copy h2 {
+    font-size: 37px;
+  }
+  .ls-home-river-copy > p:not(.ls-home-eyebrow, .ls-home-model-note) {
+    font-size: 13px;
+  }
+  .ls-home-river-copy .ls-home-button {
+    width: 100%;
+  }
+  .ls-home-film {
+    padding-top: 0;
+  }
+  .ls-home-film video {
+    min-height: 200px;
+    object-fit: contain;
+  }
+  .ls-home-tools-grid {
+    grid-template-columns: 1fr;
+  }
+  .ls-home-tools-grid > button {
+    padding: 22px 0;
+    min-height: 105px;
+    gap: 18px;
+  }
+  .ls-home-tools-grid > button > span {
+    gap: 6px;
+  }
+  .ls-home-tools-grid small {
+    max-width: none;
+  }
+  .ls-home-tools-grid > button > svg:last-child {
+    margin-top: 5px;
+  }
+  .ls-home-additional-tools {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ls-home-evidence {
+    padding: 45px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+  }
+  .ls-home-evidence h2 {
+    font-size: 34px;
+  }
+  .ls-home-footer {
+    padding: 30px 20px;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ls-home {
+    scroll-behavior: auto;
+  }
+  .ls-home *,
+  .ls-home *::before,
+  .ls-home *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .ls-home-button:hover,
+  .ls-home-steps button:hover > svg {
+    transform: none;
+  }
+}

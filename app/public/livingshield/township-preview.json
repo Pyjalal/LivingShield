@@ -1,0 +1,23 @@
+{
+  "kind": "Saved application rendering, not observed flood imagery",
+  "townshipId": "bukit-raja",
+  "studyWindowHa": 225,
+  "rainfallMm": 90,
+  "durationMinutes": 60,
+  "runoffCoefficient": 0.7,
+  "drainageMmPerHour": 5,
+  "roughnessManning": 0.04,
+  "boundary": "free-outfall",
+  "playbackMinutes": 60,
+  "storageConcepts": 12,
+  "declaredCapacityM3": 18000,
+  "model": "uncalibrated surface-flow screening",
+  "source": "Screenshot of the actual adapted native township viewport",
+  "sha256": "2cc7bafd2afe4e3afdcfa5e1bd4b15a0fc34ee08dd29af8a4dc1d2f7b584d658",
+  "dataSources": [
+    "OpenStreetMap contributors (ODbL)",
+    "Microsoft Global ML Building Footprints (CDLA Permissive 2.0)",
+    "Copernicus GLO-30 / WorldDEM-30; full attribution displayed on landing page and retained with terrain sources"
+  ],
+  "claims": "No observed flood, parcel impact, protected homes or approved SDP design is represented."
+}

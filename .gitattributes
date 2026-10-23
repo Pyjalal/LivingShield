@@ -1,0 +1,4 @@
+app/public/livingshield/source/*.py -text whitespace=cr-at-eol
+app/public/livingshield/source/*.sh -text whitespace=cr-at-eol
+app/public/livingshield/source/*.ffgraph -text whitespace=cr-at-eol
+app/public/livingshield/source/*.blend -text

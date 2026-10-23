@@ -1,0 +1,139 @@
+{
+  "id": "a19960194a404231abdfa7ccb8b7c783",
+  "status": "budget_exhausted",
+  "request": {
+    "mode": "qa",
+    "goal": "Open Inspect the module. Enter 50 in Quoted module unit rate in MYR. Verify RM 14,400.",
+    "url": "http://127.0.0.1:5180/",
+    "query": "",
+    "hackathon": "",
+    "category": "",
+    "max_steps": 8,
+    "max_pages": 3,
+    "timeout_seconds": 180,
+    "viewports": [
+      1440,
+      390
+    ],
+    "scenarios": [],
+    "assertions": [
+      {
+        "kind": "text_present",
+        "value": "14,400"
+      }
+    ],
+    "field_values": {
+      "Quoted module unit rate in MYR": "50"
+    },
+    "use_planner": true,
+    "human_wait_seconds": 90,
+    "allowed_actions": [
+      "click",
+      "fill",
+      "select",
+      "scroll",
+      "wait"
+    ]
+  },
+  "coverage": [
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Open Inspect the module",
+      "status": "assertion_failed",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "Quoted module unit rate",
+          "passed": false
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Enter 50 in Quoted module unit rate in MYR",
+      "status": "observed",
+      "assertions": []
+    },
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Verify RM 14,400 after entering 50 in Quoted module unit rate",
+      "status": "incomplete",
+      "assertions": []
+    }
+  ],
+  "findings": [
+    {
+      "kind": "assertion_failed",
+      "message": "Expected text_present: Quoted module unit rate",
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Open Inspect the module",
+      "reproduction": [
+        "Open http://127.0.0.1:5180/",
+        "CLICK Inspect the module"
+      ],
+      "screenshot": "/api/runs/a19960194a404231abdfa7ccb8b7c783/artifacts/frame-0007.png"
+    }
+  ],
+  "events": [
+    {
+      "type": "action",
+      "time": "2026-10-21T04:42:55.307076+00:00",
+      "step": 1,
+      "operation": "CLICK",
+      "label": "Inspect the module",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 682,
+      "text_helper": null,
+      "screenshot": "/api/runs/a19960194a404231abdfa7ccb8b7c783/artifacts/frame-0006.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T04:43:03.062672+00:00",
+      "step": 2,
+      "operation": "CLICK",
+      "label": "Inspect the module",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 289,
+      "text_helper": null,
+      "screenshot": "/api/runs/a19960194a404231abdfa7ccb8b7c783/artifacts/frame-0013.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T04:43:04.148333+00:00",
+      "step": 3,
+      "operation": "TYPE_TEXT",
+      "label": "Quoted module unit rate in MYR",
+      "text": "50",
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 253,
+      "text_helper": null,
+      "screenshot": "/api/runs/a19960194a404231abdfa7ccb8b7c783/artifacts/frame-0015.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T04:43:14.314847+00:00",
+      "step": 4,
+      "operation": "CLICK",
+      "label": "◇ 3D Townships",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 303,
+      "text_helper": null,
+      "screenshot": "/api/runs/a19960194a404231abdfa7ccb8b7c783/artifacts/frame-0022.png"
+    },
+    {
+      "type": "finished",
+      "time": "2026-10-21T04:43:16.253464+00:00",
+      "status": "budget_exhausted",
+      "message": "Jev decision budget reached; remaining flows were not tested"
+    }
+  ],
+  "screenshot": "/api/runs/a19960194a404231abdfa7ccb8b7c783/artifacts/frame-0022.png",
+  "error": "Jev decision budget reached; remaining flows were not tested"
+}

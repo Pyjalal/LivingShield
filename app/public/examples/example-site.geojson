@@ -1,0 +1,8 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "properties": {"name": "Fictional demonstration site", "provenance": "Illustrative shape only; not an official cadastral or surveyed boundary"},
+    "geometry": {"type": "Polygon", "coordinates": [[[101.5400,3.1700],[101.5410,3.1700],[101.5410,3.1710],[101.5400,3.1710],[101.5400,3.1700]]]}
+  }]
+}

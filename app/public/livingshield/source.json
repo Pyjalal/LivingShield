@@ -1,0 +1,69 @@
+{
+  "title": "LivingShield local design prototype",
+  "sourceDirectory": "User-provided local LivingShield design folder",
+  "importedAt": "2026-10-21",
+  "authorisation": "Local integration requested by the project owner. No separate licence file was supplied.",
+  "generator": "livingshield.py, Blender 5.1; procedural geometry and materials",
+  "generatorSha256": "e4a0677482fc8fd45591e2bdfc1e1eb47e7f10fffd0110169289ecd84e650702",
+  "module": {
+    "nominalBaseEdgeMm": 300,
+    "nominalHeightMm": 300,
+    "actualGlbBoundsMm": [
+      309.865,
+      308.991,
+      278.267
+    ],
+    "triangles": 33886,
+    "glbUnits": "metres; glTF Y-up",
+    "stlUnits": "millimetres as exported by source script",
+    "glbSha256": "5a99713a5468d5f39ad2c6cc20e5d4441910922ef15e184037f19bd45580f2bf",
+    "stlSha256": "3be3c348ef201910031f6ad3201f7bf2caa729211fcc36ddac78a5aeb8066b49"
+  },
+  "videoSha256": "b1295725f06085d4dac5e00349097ecb7b036c52d7feee703d51a209f1513834",
+  "notice": "Design concept, not a tested flood barrier, approved revetment or construction specification. Source video claims about stabilisation, slower flow and habitat are design intentions; its Ocean modifier is visual animation, not a hydraulic calculation. Vegetation is illustrative, not an approved Malaysian species specification. Mesh topology checks do not validate material strength, anchoring, scour, ecology, durability or printability.",
+  "editableSources": [
+    {
+      "file": "captions.ffgraph",
+      "url": "/livingshield/source/captions.ffgraph",
+      "bytes": 3596,
+      "sha256": "c49dc288057969d9231c07d87d77000c71128c2b17a55ab18de36004879b7ad5"
+    },
+    {
+      "file": "livingshield.py",
+      "url": "/livingshield/source/livingshield.py",
+      "bytes": 44717,
+      "sha256": "e4a0677482fc8fd45591e2bdfc1e1eb47e7f10fffd0110169289ecd84e650702"
+    },
+    {
+      "file": "livingshield_scene.blend",
+      "url": "/livingshield/source/livingshield_scene.blend",
+      "bytes": 10656376,
+      "sha256": "4bbd8344992c79d7ddeb32cedc2fe0fd7f0dd9658cf1eae8db2d3d0f88ccff8d"
+    },
+    {
+      "file": "make_video.py",
+      "url": "/livingshield/source/make_video.py",
+      "bytes": 2957,
+      "sha256": "80a8779ea88c057c32544f918ee92a7f47be5418e842e621d43b4bfe7e679b9b"
+    },
+    {
+      "file": "module_triangle.blend",
+      "url": "/livingshield/source/module_triangle.blend",
+      "bytes": 1456911,
+      "sha256": "9f3a7a5749e954dfd80d5adb16c15df117e61f17df17b212f36556852a9d398d"
+    },
+    {
+      "file": "render_all.sh",
+      "url": "/livingshield/source/render_all.sh",
+      "bytes": 257,
+      "sha256": "8d2663cf81f0efb000e0815988e9c7cf9f0529e28b07975941c3b7e58843502c"
+    },
+    {
+      "file": "still.sh",
+      "url": "/livingshield/source/still.sh",
+      "bytes": 380,
+      "sha256": "73783e69c75e1bdbb140049f49766c13b79066346fcfff71c3f7554812086496"
+    }
+  ],
+  "sourceNotice": "Original supplied generators and editable Blender projects are preserved byte-for-byte. Generated frame caches and render logs remain in the original local folder. Source scripts are not executed by the web app."
+}

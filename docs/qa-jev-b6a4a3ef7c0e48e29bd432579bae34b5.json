@@ -1,0 +1,105 @@
+{
+  "id": "b6a4a3ef7c0e48e29bd432579bae34b5",
+  "status": "completed",
+  "request": {
+    "mode": "qa",
+    "goal": "Verify the guided demo starts.",
+    "url": "http://127.0.0.1:5180/",
+    "query": "",
+    "hackathon": "",
+    "category": "",
+    "max_steps": 5,
+    "max_pages": 1,
+    "timeout_seconds": 180,
+    "viewports": [
+      1440,
+      390
+    ],
+    "scenarios": [
+      {
+        "name": "Guided demo",
+        "goal": "Click Start the guided demo. Stop when 4 · Review the brief is available.",
+        "assertions": [
+          {
+            "kind": "text_present",
+            "value": "Review the brief"
+          }
+        ]
+      }
+    ],
+    "assertions": [],
+    "field_values": {},
+    "use_planner": false,
+    "human_wait_seconds": 90,
+    "allowed_actions": [
+      "click",
+      "fill",
+      "select",
+      "scroll",
+      "wait"
+    ]
+  },
+  "coverage": [
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Guided demo",
+      "status": "verified",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "Review the brief",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 390,
+      "scenario": "Guided demo",
+      "status": "verified",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "Review the brief",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "events": [
+    {
+      "type": "action",
+      "time": "2026-10-21T04:42:34.914891+00:00",
+      "step": 1,
+      "operation": "CLICK",
+      "label": "Start the guided demo From storm to intervention",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 292,
+      "text_helper": null,
+      "screenshot": "/api/runs/b6a4a3ef7c0e48e29bd432579bae34b5/artifacts/frame-0005.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T04:42:45.249473+00:00",
+      "step": 2,
+      "operation": "CLICK",
+      "label": "Start the guided demo From storm to intervention",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 481,
+      "text_helper": null,
+      "screenshot": "/api/runs/b6a4a3ef7c0e48e29bd432579bae34b5/artifacts/frame-0010.png"
+    },
+    {
+      "type": "finished",
+      "time": "2026-10-21T04:42:48.190036+00:00",
+      "status": "completed",
+      "message": "Run completed"
+    }
+  ],
+  "screenshot": "/api/runs/b6a4a3ef7c0e48e29bd432579bae34b5/artifacts/frame-0011.png",
+  "error": null
+}

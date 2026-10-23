@@ -1,0 +1,575 @@
+.ls-lab {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: auto;
+  background: var(--tt-bg);
+  color: var(--tt-text);
+  font-family: var(--tt-font);
+}
+.ls-lab .ls-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 35px;
+  padding: 32px 36px 28px;
+  border-bottom: 1px solid var(--tt-border);
+}
+.ls-lab .ls-eyebrow {
+  color: var(--tt-muted);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: 1.8px;
+  margin-bottom: 9px;
+}
+.ls-lab .ls-header h1 {
+  font: normal 42px/1.04 var(--tt-font-heading);
+  letter-spacing: -1.6px;
+  margin-bottom: 13px;
+}
+.ls-lab .ls-header p:not(.ls-eyebrow) {
+  max-width: 560px;
+  font-size: 12px;
+  color: var(--tt-muted);
+  line-height: 1.65;
+}
+.ls-lab .ls-pilot {
+  width: 280px;
+  flex-shrink: 0;
+  display: grid;
+  gap: 7px;
+}
+.ls-lab .ls-pilot label {
+  font-size: 10px;
+  font-weight: 600;
+}
+.ls-lab :is(button, select, input, a) {
+  font-family: inherit;
+}
+.ls-lab :is(select, input[type='number']) {
+  background: var(--tt-surface-raised);
+  color: var(--tt-text);
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 4px;
+  min-height: 38px;
+  padding: 8px 10px;
+  font-size: 12px;
+  max-width: 100%;
+}
+.ls-lab button {
+  cursor: pointer;
+  color: var(--tt-text);
+  border: 1px solid var(--tt-border);
+  background: var(--tt-surface);
+  border-radius: 4px;
+  min-height: 34px;
+  padding: 7px 11px;
+  font-size: 11px;
+}
+.ls-lab button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.ls-lab :is(button, a):hover {
+  border-color: var(--tt-border-strong);
+}
+.ls-lab button[aria-pressed='true'] {
+  border-color: var(--tt-accent);
+  background: var(--tt-accent-soft);
+  color: var(--tt-accent);
+}
+.ls-lab .ls-pilot button {
+  text-align: left;
+  border: 0;
+  padding: 3px 0;
+  font-size: 11px;
+  min-height: 24px;
+  background: transparent;
+  color: var(--tt-accent);
+}
+.ls-lab .ls-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 340px;
+  border-bottom: 1px solid var(--tt-border);
+}
+.ls-lab .ls-viewer-panel {
+  min-width: 0;
+  background: var(--tt-surface);
+}
+.ls-lab .ls-viewer-heading {
+  min-height: 62px;
+  padding: 12px 24px;
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--tt-border);
+}
+.ls-lab .ls-mode-switch {
+  display: flex;
+  gap: 5px;
+}
+.ls-lab .ls-mode-switch button {
+  background: transparent;
+  border-color: transparent;
+  white-space: nowrap;
+}
+.ls-lab .ls-concept-badge {
+  font-size: 9px;
+  color: var(--tt-muted);
+  border: 1px solid var(--tt-border);
+  border-radius: 20px;
+  padding: 4px 7px;
+  white-space: nowrap;
+}
+.ls-lab .ls-scene-wrap {
+  position: relative;
+  height: 470px;
+  min-height: 370px;
+  background: var(--tt-scene-bg);
+}
+.ls-lab .ls-canvas {
+  position: absolute;
+  inset: 0;
+}
+.ls-lab .ls-canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  outline-offset: -4px;
+}
+.ls-lab .ls-scene-status {
+  position: absolute;
+  inset: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  text-align: center;
+  color: var(--tt-text);
+  background: var(--tt-surface);
+  font-size: 12px;
+}
+.ls-lab .ls-scene-tools {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  pointer-events: none;
+}
+.ls-lab .ls-scene-tools span {
+  font-size: 8px;
+  letter-spacing: 1.3px;
+  padding: 7px 9px;
+  color: var(--tt-muted);
+  background: var(--tt-overlay-bg);
+  border-radius: 3px;
+  margin-right: auto;
+}
+.ls-lab .ls-scene-tools button {
+  pointer-events: auto;
+  background: var(--tt-overlay-bg);
+  min-height: 30px;
+  font-size: 10px;
+}
+.ls-lab .ls-scene-help {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+  padding: 4px 7px;
+  background: var(--tt-overlay-bg);
+  color: var(--tt-muted);
+  font-size: 9px;
+  border-radius: 3px;
+  pointer-events: none;
+}
+.ls-lab .ls-module-notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 23px 25px;
+  gap: 22px;
+}
+.ls-lab .ls-module-notes span {
+  color: var(--tt-text);
+  font-size: 11px;
+  font-weight: 600;
+}
+.ls-lab .ls-module-notes p {
+  color: var(--tt-muted);
+  font-size: 11px;
+  line-height: 1.6;
+  margin-top: 7px;
+}
+.ls-lab .ls-stage-panel {
+  padding: 17px 24px 23px;
+}
+.ls-lab .ls-stage-switch {
+  display: flex;
+  gap: 9px;
+}
+.ls-lab .ls-stage-switch button {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  min-height: 39px;
+}
+.ls-lab .ls-stage-switch span {
+  font-size: 9px;
+  color: var(--tt-muted);
+}
+.ls-lab .ls-stage-panel p {
+  font-size: 11px;
+  color: var(--tt-muted);
+  line-height: 1.6;
+  margin-top: 12px;
+  max-width: 720px;
+}
+.ls-lab .ls-config {
+  padding: 23px 24px 18px;
+  border-left: 1px solid var(--tt-border);
+  background: var(--tt-surface);
+}
+.ls-lab .ls-config h2 {
+  font: normal 25px/1.1 var(--tt-font-heading);
+  letter-spacing: -0.5px;
+  margin-bottom: 10px;
+}
+.ls-lab .ls-config-intro {
+  font-size: 11px;
+  color: var(--tt-muted);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.ls-lab .ls-config > label {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--tt-muted);
+  margin-bottom: 17px;
+}
+.ls-lab .ls-config label strong {
+  font-weight: 600;
+  color: var(--tt-text);
+}
+.ls-lab .ls-config input[type='range'] {
+  grid-column: 1/-1;
+  width: 100%;
+  accent-color: var(--tt-accent);
+}
+.ls-lab .ls-quantity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 10px;
+  border-top: 1px solid var(--tt-border);
+  border-bottom: 1px solid var(--tt-border);
+  padding: 17px 0;
+  margin: 20px 0 16px;
+}
+.ls-lab .ls-quantity-grid span {
+  display: block;
+  font-size: 9px;
+  color: var(--tt-muted);
+  margin-bottom: 5px;
+}
+.ls-lab .ls-quantity-grid strong {
+  font-size: 23px;
+  font-weight: 500;
+  color: var(--tt-text);
+  letter-spacing: -0.6px;
+}
+.ls-lab .ls-quantity-grid small {
+  font-size: 10px;
+  letter-spacing: 0;
+}
+.ls-lab .ls-config .ls-rate {
+  display: flex;
+  flex-direction: column;
+}
+.ls-lab .ls-rate input {
+  width: 100%;
+  font-size: 11px;
+}
+.ls-lab .ls-cost {
+  display: grid;
+  gap: 5px;
+  padding: 11px 0 17px;
+  font-size: 10px;
+  color: var(--tt-muted);
+}
+.ls-lab .ls-cost strong {
+  color: var(--tt-accent);
+  font-size: 19px;
+  font-weight: 500;
+}
+.ls-lab .ls-cost small {
+  font-size: 9px;
+  line-height: 1.5;
+}
+.ls-lab .ls-config .ls-primary {
+  background: var(--tt-accent);
+  color: var(--tt-accent-contrast);
+  border-color: var(--tt-accent);
+  width: 100%;
+  min-height: 38px;
+  font-weight: 600;
+}
+.ls-lab .ls-export-status {
+  min-height: 32px;
+  font-size: 9px;
+  line-height: 1.6;
+  color: var(--tt-muted);
+  margin-top: 8px;
+}
+.ls-lab [role='alert'] {
+  color: var(--tt-error);
+  font-size: 11px;
+  line-height: 1.6;
+}
+.ls-lab .ls-evidence-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 40px;
+  padding: 36px;
+}
+.ls-lab .ls-evidence-row h2 {
+  font: normal 28px/1.1 var(--tt-font-heading);
+  letter-spacing: -0.7px;
+  margin-bottom: 12px;
+}
+.ls-lab .ls-evidence-row p:not(.ls-eyebrow) {
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--tt-muted);
+  max-width: 620px;
+}
+.ls-lab .ls-film video {
+  width: 100%;
+  aspect-ratio: 16/9;
+  display: block;
+  margin-top: 20px;
+  border: 1px solid var(--tt-border);
+  border-radius: 6px;
+  background: var(--tt-scene-bg);
+}
+.ls-lab .ls-source-card {
+  border-left: 1px solid var(--tt-border);
+  padding-left: 36px;
+}
+.ls-lab .ls-source-card dl {
+  margin: 17px 0;
+}
+.ls-lab .ls-source-card dl div {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--tt-border);
+  font-size: 11px;
+}
+.ls-lab .ls-source-card dt {
+  color: var(--tt-muted);
+}
+.ls-lab .ls-source-card dd {
+  color: var(--tt-text);
+}
+.ls-lab .ls-file-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin: 19px 0;
+}
+.ls-lab .ls-file-links a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--tt-border-strong);
+  background: var(--tt-surface);
+  color: var(--tt-accent);
+  border-radius: 4px;
+  padding: 8px 10px;
+  min-height: 36px;
+  font-size: 11px;
+}
+.ls-lab .ls-evidence-row .ls-prototype-note {
+  font-size: 10px;
+  padding: 12px;
+  border-left: 2px solid var(--tt-warning);
+  background: var(--tt-warning-bg);
+  color: var(--tt-warning);
+}
+.ls-lab .ls-method {
+  border-top: 1px solid var(--tt-border);
+  padding: 20px 36px 26px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--tt-muted);
+}
+.ls-lab .ls-method summary {
+  cursor: pointer;
+  color: var(--tt-text);
+}
+.ls-lab .ls-method > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-top: 14px;
+}
+@media (min-width: 1650px) {
+  .ls-lab .ls-workspace {
+    grid-template-columns: minmax(0, 1fr) 390px;
+  }
+  .ls-lab .ls-scene-wrap {
+    height: 560px;
+  }
+}
+@media (max-width: 1050px) {
+  .ls-lab .ls-header {
+    padding: 25px;
+  }
+  .ls-lab .ls-header h1 {
+    font-size: 35px;
+  }
+  .ls-lab .ls-workspace {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+  .ls-lab .ls-viewer-heading {
+    padding: 10px 14px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .ls-lab .ls-scene-wrap {
+    height: 440px;
+  }
+  .ls-lab .ls-config {
+    padding: 20px 17px;
+  }
+  .ls-lab .ls-evidence-row {
+    gap: 24px;
+    padding: 28px;
+  }
+  .ls-lab .ls-source-card {
+    padding-left: 24px;
+  }
+  .ls-lab .ls-stage-switch {
+    flex-wrap: wrap;
+  }
+  .ls-lab .ls-stage-switch button {
+    flex: 1 1 140px;
+  }
+}
+@media (max-width: 760px) {
+  .ls-lab .ls-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px 20px;
+    gap: 20px;
+  }
+  .ls-lab .ls-header h1 {
+    font-size: 34px;
+  }
+  .ls-lab .ls-pilot {
+    width: 100%;
+  }
+  .ls-lab .ls-workspace {
+    display: flex;
+    flex-direction: column;
+  }
+  .ls-lab .ls-scene-wrap {
+    height: 410px;
+    min-height: 340px;
+  }
+  .ls-lab .ls-scene-tools {
+    top: 11px;
+    left: 12px;
+    right: 12px;
+    flex-wrap: wrap;
+  }
+  .ls-lab .ls-scene-tools span {
+    flex-basis: 100%;
+    width: fit-content;
+    margin-right: 0;
+  }
+  .ls-lab .ls-scene-tools button {
+    min-height: 34px;
+  }
+  .ls-lab .ls-mode-switch {
+    width: 100%;
+  }
+  .ls-lab .ls-mode-switch button {
+    flex: 1;
+    padding: 6px 8px;
+    font-size: 10px;
+    white-space: normal;
+  }
+  .ls-lab .ls-concept-badge {
+    margin: 4px 0;
+  }
+  .ls-lab .ls-module-notes {
+    padding: 21px 20px;
+    gap: 15px;
+  }
+  .ls-lab .ls-module-notes span {
+    font-size: 10px;
+  }
+  .ls-lab .ls-module-notes p {
+    font-size: 10px;
+  }
+  .ls-lab .ls-config {
+    border-left: 0;
+    border-top: 1px solid var(--tt-border);
+    padding: 25px 20px;
+  }
+  .ls-lab .ls-config-intro {
+    max-width: 500px;
+  }
+  .ls-lab .ls-config > label {
+    margin-bottom: 22px;
+  }
+  .ls-lab .ls-quantity-grid {
+    gap: 20px;
+  }
+  .ls-lab .ls-config .ls-primary {
+    min-height: 44px;
+  }
+  .ls-lab .ls-stage-panel {
+    padding: 18px 15px;
+  }
+  .ls-lab .ls-stage-switch {
+    gap: 6px;
+  }
+  .ls-lab .ls-stage-switch button {
+    flex: 1 1 90px;
+    font-size: 10px;
+    padding: 7px 5px;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .ls-lab .ls-evidence-row {
+    grid-template-columns: 1fr;
+    padding: 28px 20px;
+    gap: 28px;
+  }
+  .ls-lab .ls-source-card {
+    padding: 24px 0 0;
+    border-left: 0;
+    border-top: 1px solid var(--tt-border);
+  }
+  .ls-lab .ls-source-card dl div {
+    grid-template-columns: 120px 1fr;
+  }
+  .ls-lab .ls-method {
+    padding: 20px;
+  }
+  .ls-lab .ls-method > div {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

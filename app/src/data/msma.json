@@ -1,0 +1,1458 @@
+{
+  "source": "https://wplb.water.gov.my/assets/msma-2nd-edition.pdf",
+  "edition": "2012",
+  "stations": [
+    {
+      "id": "1437116",
+      "name": "Stor JPS Johor Bahru",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 59.972,
+      "kappa": 0.163,
+      "theta": 0.121,
+      "eta": 0.793
+    },
+    {
+      "id": "1534002",
+      "name": "Pusat Kem. Pekan Nenas",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 54.265,
+      "kappa": 0.179,
+      "theta": 0.1,
+      "eta": 0.756
+    },
+    {
+      "id": "1541139",
+      "name": "Johor Silica",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 59.06,
+      "kappa": 0.202,
+      "theta": 0.128,
+      "eta": 0.66
+    },
+    {
+      "id": "1636001",
+      "name": "Balai Polis Kg Seelong",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 50.115,
+      "kappa": 0.191,
+      "theta": 0.099,
+      "eta": 0.763
+    },
+    {
+      "id": "1737001",
+      "name": "SM Bukit Besar",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 50.554,
+      "kappa": 0.193,
+      "theta": 0.117,
+      "eta": 0.722
+    },
+    {
+      "id": "1829002",
+      "name": "Setor JPS Batu Pahat",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 64.099,
+      "kappa": 0.174,
+      "theta": 0.201,
+      "eta": 0.826
+    },
+    {
+      "id": "1834124",
+      "name": "Ladang Ulu Remis",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 55.864,
+      "kappa": 0.166,
+      "theta": 0.174,
+      "eta": 0.81
+    },
+    {
+      "id": "1839196",
+      "name": "Simpang Masai K. Sedili",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 61.562,
+      "kappa": 0.191,
+      "theta": 0.103,
+      "eta": 0.701
+    },
+    {
+      "id": "1931003",
+      "name": "Emp. Semberong",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 60.568,
+      "kappa": 0.163,
+      "theta": 0.159,
+      "eta": 0.821
+    },
+    {
+      "id": "2025001",
+      "name": "Pintu Kaw. Tg. Agas",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 80.936,
+      "kappa": 0.187,
+      "theta": 0.258,
+      "eta": 0.89
+    },
+    {
+      "id": "2033001",
+      "name": "JPS Kluang",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 54.428,
+      "kappa": 0.192,
+      "theta": 0.108,
+      "eta": 0.74
+    },
+    {
+      "id": "2231001",
+      "name": "Ladang Chan Wing",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 57.188,
+      "kappa": 0.186,
+      "theta": 0.093,
+      "eta": 0.777
+    },
+    {
+      "id": "2232001",
+      "name": "Ladang Kekayaan",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 53.457,
+      "kappa": 0.18,
+      "theta": 0.094,
+      "eta": 0.735
+    },
+    {
+      "id": "2235163",
+      "name": "Ibu Bekalan Kahang",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 52.177,
+      "kappa": 0.186,
+      "theta": 0.055,
+      "eta": 0.652
+    },
+    {
+      "id": "2237164",
+      "name": "Jalan Kluang-Mersing",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 56.966,
+      "kappa": 0.19,
+      "theta": 0.144,
+      "eta": 0.637
+    },
+    {
+      "id": "2330009",
+      "name": "Ladang Labis",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 45.808,
+      "kappa": 0.222,
+      "theta": 0.012,
+      "eta": 0.713
+    },
+    {
+      "id": "2528012",
+      "name": "Rmh. Tapis Segamat",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 45.212,
+      "kappa": 0.224,
+      "theta": 0.039,
+      "eta": 0.711
+    },
+    {
+      "id": "2534160",
+      "name": "Kg Peta Hulu Sg Endau",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 59.5,
+      "kappa": 0.185,
+      "theta": 0.129,
+      "eta": 0.623
+    },
+    {
+      "id": "2636170",
+      "name": "Setor JPS Endau",
+      "state": "Johor",
+      "page": 56,
+      "lambda": 62.04,
+      "kappa": 0.215,
+      "theta": 0.103,
+      "eta": 0.592
+    },
+    {
+      "id": "5507076",
+      "name": "Bt. 27, Jalan Baling",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 52.398,
+      "kappa": 0.172,
+      "theta": 0.104,
+      "eta": 0.788
+    },
+    {
+      "id": "5704055",
+      "name": "Kedah Peak",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 81.579,
+      "kappa": 0.2,
+      "theta": 0.437,
+      "eta": 0.719
+    },
+    {
+      "id": "5806066",
+      "name": "Klinik Jeniang",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 59.786,
+      "kappa": 0.165,
+      "theta": 0.203,
+      "eta": 0.791
+    },
+    {
+      "id": "5808001",
+      "name": "Bt. 61, Jalang Baling",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 47.496,
+      "kappa": 0.183,
+      "theta": 0.079,
+      "eta": 0.752
+    },
+    {
+      "id": "6103047",
+      "name": "Setor JPS Alor Setar",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 64.832,
+      "kappa": 0.168,
+      "theta": 0.346,
+      "eta": 0.8
+    },
+    {
+      "id": "6108001",
+      "name": "Kompleks Rumah Muda",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 52.341,
+      "kappa": 0.173,
+      "theta": 0.12,
+      "eta": 0.792
+    },
+    {
+      "id": "6206035",
+      "name": "Kuala Nerang",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 54.849,
+      "kappa": 0.174,
+      "theta": 0.25,
+      "eta": 0.81
+    },
+    {
+      "id": "6107032",
+      "name": "AmpangPadu",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 66.103,
+      "kappa": 0.177,
+      "theta": 0.284,
+      "eta": 0.842
+    },
+    {
+      "id": "6306031",
+      "name": "Padang Senai",
+      "state": "Kedah",
+      "page": 56,
+      "lambda": 60.331,
+      "kappa": 0.193,
+      "theta": 0.249,
+      "eta": 0.829
+    },
+    {
+      "id": "4614001",
+      "name": "Brook",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 49.623,
+      "kappa": 0.159,
+      "theta": 0.242,
+      "eta": 0.795
+    },
+    {
+      "id": "4726001",
+      "name": "Gunung Gagau",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 43.024,
+      "kappa": 0.22,
+      "theta": 0.004,
+      "eta": 0.527
+    },
+    {
+      "id": "4819027",
+      "name": "Gua Musang",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 57.132,
+      "kappa": 0.155,
+      "theta": 0.119,
+      "eta": 0.795
+    },
+    {
+      "id": "4915001",
+      "name": "Chabai",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 47.932,
+      "kappa": 0.169,
+      "theta": 0.108,
+      "eta": 0.794
+    },
+    {
+      "id": "4923001",
+      "name": "Kg Aring",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 47.62,
+      "kappa": 0.187,
+      "theta": 0.02,
+      "eta": 0.637
+    },
+    {
+      "id": "5120025",
+      "name": "Balai Polis Bertam",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 61.338,
+      "kappa": 0.168,
+      "theta": 0.193,
+      "eta": 0.811
+    },
+    {
+      "id": "5216001",
+      "name": "Gob",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 41.783,
+      "kappa": 0.175,
+      "theta": 0.122,
+      "eta": 0.72
+    },
+    {
+      "id": "5320038",
+      "name": "Dabong",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 51.442,
+      "kappa": 0.189,
+      "theta": 0.077,
+      "eta": 0.71
+    },
+    {
+      "id": "5322044",
+      "name": "Kg Lalok",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 53.766,
+      "kappa": 0.197,
+      "theta": 0.121,
+      "eta": 0.705
+    },
+    {
+      "id": "5522047",
+      "name": "JPS Kuala Krai",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 39.669,
+      "kappa": 0.231,
+      "theta": 0.0,
+      "eta": 0.563
+    },
+    {
+      "id": "5718033",
+      "name": "Kg Jeli, Tanah Merah",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 72.173,
+      "kappa": 0.196,
+      "theta": 0.36,
+      "eta": 0.703
+    },
+    {
+      "id": "5719001",
+      "name": "Kg Durian Daun Lawang",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 51.161,
+      "kappa": 0.193,
+      "theta": 0.063,
+      "eta": 0.745
+    },
+    {
+      "id": "5722057",
+      "name": "JPS Machang",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 48.433,
+      "kappa": 0.219,
+      "theta": 0.0,
+      "eta": 0.601
+    },
+    {
+      "id": "5824079",
+      "name": "Sg Rasau Pasir Putih",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 51.919,
+      "kappa": 0.216,
+      "theta": 0.062,
+      "eta": 0.56
+    },
+    {
+      "id": "6019004",
+      "name": "Rumah Kastam Rantau Pjg",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 49.315,
+      "kappa": 0.228,
+      "theta": 0.0,
+      "eta": 0.609
+    },
+    {
+      "id": "6122064",
+      "name": "Setor JPS Kota Bharu",
+      "state": "Kelantan",
+      "page": 57,
+      "lambda": 60.988,
+      "kappa": 0.214,
+      "theta": 0.148,
+      "eta": 0.616
+    },
+    {
+      "id": "3015001",
+      "name": "Puchong Drop, K Lumpur",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 69.65,
+      "kappa": 0.151,
+      "theta": 0.223,
+      "eta": 0.88
+    },
+    {
+      "id": "3116003",
+      "name": "Ibu Pejabat JPS",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 61.976,
+      "kappa": 0.145,
+      "theta": 0.122,
+      "eta": 0.818
+    },
+    {
+      "id": "3116004",
+      "name": "Ibu Pejabat JPS1",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 64.689,
+      "kappa": 0.149,
+      "theta": 0.174,
+      "eta": 0.837
+    },
+    {
+      "id": "3116005",
+      "name": "SK Taman Maluri",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 62.765,
+      "kappa": 0.132,
+      "theta": 0.147,
+      "eta": 0.82
+    },
+    {
+      "id": "3116006",
+      "name": "Ladang Edinburgh",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 63.483,
+      "kappa": 0.146,
+      "theta": 0.21,
+      "eta": 0.83
+    },
+    {
+      "id": "3216001",
+      "name": "Kg. Sungai Tua",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 64.203,
+      "kappa": 0.152,
+      "theta": 0.25,
+      "eta": 0.844
+    },
+    {
+      "id": "3216004",
+      "name": "SK Jenis Keb. Kepong",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 73.602,
+      "kappa": 0.164,
+      "theta": 0.33,
+      "eta": 0.874
+    },
+    {
+      "id": "3217001",
+      "name": "Ibu Bek. KM16, Gombak",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 66.328,
+      "kappa": 0.144,
+      "theta": 0.23,
+      "eta": 0.859
+    },
+    {
+      "id": "3217002",
+      "name": "Emp. Genting Kelang",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 70.2,
+      "kappa": 0.165,
+      "theta": 0.29,
+      "eta": 0.854
+    },
+    {
+      "id": "3217003",
+      "name": "Ibu Bek. KM11, Gombak",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 62.609,
+      "kappa": 0.152,
+      "theta": 0.221,
+      "eta": 0.804
+    },
+    {
+      "id": "3217004",
+      "name": "Kg. Kuala Seleh, H. Klg",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 61.516,
+      "kappa": 0.139,
+      "theta": 0.183,
+      "eta": 0.837
+    },
+    {
+      "id": "3217005",
+      "name": "Kg. Kerdas, Gombak",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 63.241,
+      "kappa": 0.162,
+      "theta": 0.137,
+      "eta": 0.856
+    },
+    {
+      "id": "3317001",
+      "name": "Air Terjun Sg. Batu",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 72.992,
+      "kappa": 0.162,
+      "theta": 0.171,
+      "eta": 0.871
+    },
+    {
+      "id": "3317004",
+      "name": "Genting Sempah",
+      "state": "Kuala Lumpur",
+      "page": 57,
+      "lambda": 61.335,
+      "kappa": 0.157,
+      "theta": 0.292,
+      "eta": 0.868
+    },
+    {
+      "id": "2222001",
+      "name": "Bukit Sebukor",
+      "state": "Melaka",
+      "page": 58,
+      "lambda": 95.823,
+      "kappa": 0.169,
+      "theta": 0.66,
+      "eta": 0.947
+    },
+    {
+      "id": "2224038",
+      "name": "Chin Chin Tepi Jalan",
+      "state": "Melaka",
+      "page": 58,
+      "lambda": 54.241,
+      "kappa": 0.161,
+      "theta": 0.114,
+      "eta": 0.846
+    },
+    {
+      "id": "2321006",
+      "name": "Ladang Lendu",
+      "state": "Melaka",
+      "page": 58,
+      "lambda": 72.163,
+      "kappa": 0.184,
+      "theta": 0.376,
+      "eta": 0.9
+    },
+    {
+      "id": "2719001",
+      "name": "Setor JPS Sikamat",
+      "state": "Negeri Sembilan",
+      "page": 58,
+      "lambda": 52.823,
+      "kappa": 0.167,
+      "theta": 0.159,
+      "eta": 0.811
+    },
+    {
+      "id": "2722202",
+      "name": "Kg Sawah Lebar K Pilah",
+      "state": "Negeri Sembilan",
+      "page": 58,
+      "lambda": 44.811,
+      "kappa": 0.181,
+      "theta": 0.137,
+      "eta": 0.811
+    },
+    {
+      "id": "2723002",
+      "name": "Sungai Kepis",
+      "state": "Negeri Sembilan",
+      "page": 58,
+      "lambda": 54.4,
+      "kappa": 0.176,
+      "theta": 0.134,
+      "eta": 0.842
+    },
+    {
+      "id": "2725083",
+      "name": "Ladang New Rompin",
+      "state": "Negeri Sembilan",
+      "page": 58,
+      "lambda": 57.616,
+      "kappa": 0.191,
+      "theta": 0.224,
+      "eta": 0.817
+    },
+    {
+      "id": "2920012",
+      "name": "Petaling K Kelawang",
+      "state": "Negeri Sembilan",
+      "page": 58,
+      "lambda": 50.749,
+      "kappa": 0.173,
+      "theta": 0.235,
+      "eta": 0.854
+    },
+    {
+      "id": "2630001",
+      "name": "Sungai Pukim",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 46.577,
+      "kappa": 0.232,
+      "theta": 0.169,
+      "eta": 0.687
+    },
+    {
+      "id": "2634193",
+      "name": "Sungai Anak Endau",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 66.179,
+      "kappa": 0.182,
+      "theta": 0.081,
+      "eta": 0.589
+    },
+    {
+      "id": "2828173",
+      "name": "Kg Gambir",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 47.701,
+      "kappa": 0.182,
+      "theta": 0.096,
+      "eta": 0.715
+    },
+    {
+      "id": "3026156",
+      "name": "Pos Iskandar",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 47.452,
+      "kappa": 0.184,
+      "theta": 0.071,
+      "eta": 0.78
+    },
+    {
+      "id": "3121143",
+      "name": "Simpang Pelangai",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 57.109,
+      "kappa": 0.165,
+      "theta": 0.19,
+      "eta": 0.867
+    },
+    {
+      "id": "3134165",
+      "name": "Dispensari Nenasi",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 61.697,
+      "kappa": 0.152,
+      "theta": 0.12,
+      "eta": 0.593
+    },
+    {
+      "id": "3231163",
+      "name": "Kg Unchang",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 55.568,
+      "kappa": 0.179,
+      "theta": 0.096,
+      "eta": 0.649
+    },
+    {
+      "id": "3424081",
+      "name": "JPS Temerloh",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 73.141,
+      "kappa": 0.173,
+      "theta": 0.577,
+      "eta": 0.896
+    },
+    {
+      "id": "3533102",
+      "name": "Rumah Pam Pahang Tua",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 58.483,
+      "kappa": 0.212,
+      "theta": 0.197,
+      "eta": 0.586
+    },
+    {
+      "id": "3628001",
+      "name": "Pintu Kaw. Pulau Kertam",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 50.024,
+      "kappa": 0.211,
+      "theta": 0.089,
+      "eta": 0.716
+    },
+    {
+      "id": "3818054",
+      "name": "Setor JPS Raub",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 53.115,
+      "kappa": 0.168,
+      "theta": 0.191,
+      "eta": 0.833
+    },
+    {
+      "id": "3924072",
+      "name": "Rmh Pam Paya Kangsar",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 62.301,
+      "kappa": 0.167,
+      "theta": 0.363,
+      "eta": 0.868
+    },
+    {
+      "id": "3930012",
+      "name": "Sungai Lembing PCC Mill",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 45.999,
+      "kappa": 0.21,
+      "theta": 0.074,
+      "eta": 0.59
+    },
+    {
+      "id": "4023001",
+      "name": "Kg Sungai Yap",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 65.914,
+      "kappa": 0.195,
+      "theta": 0.252,
+      "eta": 0.817
+    },
+    {
+      "id": "4127001",
+      "name": "Hulu Tekai Kwsn.”B”",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 59.861,
+      "kappa": 0.226,
+      "theta": 0.213,
+      "eta": 0.762
+    },
+    {
+      "id": "4219001",
+      "name": "Bukit Bentong",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 73.676,
+      "kappa": 0.165,
+      "theta": 0.384,
+      "eta": 0.879
+    },
+    {
+      "id": "4223115",
+      "name": "Kg Merting",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 52.731,
+      "kappa": 0.184,
+      "theta": 0.096,
+      "eta": 0.805
+    },
+    {
+      "id": "4513033",
+      "name": "Gunung Brinchang",
+      "state": "Pahang",
+      "page": 58,
+      "lambda": 42.004,
+      "kappa": 0.164,
+      "theta": 0.046,
+      "eta": 0.802
+    },
+    {
+      "id": "5204048",
+      "name": "Sg Simpang Ampat",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 62.089,
+      "kappa": 0.22,
+      "theta": 0.402,
+      "eta": 0.785
+    },
+    {
+      "id": "5302001",
+      "name": "Tangki Air Besar Sg Pinang",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 67.949,
+      "kappa": 0.181,
+      "theta": 0.299,
+      "eta": 0.736
+    },
+    {
+      "id": "5302003",
+      "name": "Kolam Tkgn Air Hitam",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 52.459,
+      "kappa": 0.191,
+      "theta": 0.106,
+      "eta": 0.729
+    },
+    {
+      "id": "5303001",
+      "name": "Rmh Kebajikan P Pinang",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 57.326,
+      "kappa": 0.203,
+      "theta": 0.325,
+      "eta": 0.791
+    },
+    {
+      "id": "5303053",
+      "name": "Komplek Prai",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 52.771,
+      "kappa": 0.203,
+      "theta": 0.095,
+      "eta": 0.717
+    },
+    {
+      "id": "5402001",
+      "name": "Klinik Bkt Bendera P Pinang",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 64.504,
+      "kappa": 0.196,
+      "theta": 0.149,
+      "eta": 0.723
+    },
+    {
+      "id": "5402002",
+      "name": "Kolam Bersih P Pinang",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 53.785,
+      "kappa": 0.181,
+      "theta": 0.125,
+      "eta": 0.706
+    },
+    {
+      "id": "5404043",
+      "name": "Ibu Bekalan Sg Kulim",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 57.832,
+      "kappa": 0.188,
+      "theta": 0.245,
+      "eta": 0.751
+    },
+    {
+      "id": "5504035",
+      "name": "Lahar Ikan Mati Kepala Batas",
+      "state": "Pulau Pinang",
+      "page": 58,
+      "lambda": 48.415,
+      "kappa": 0.221,
+      "theta": 0.068,
+      "eta": 0.692
+    },
+    {
+      "id": "4010001",
+      "name": "JPS Teluk Intan",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 54.017,
+      "kappa": 0.198,
+      "theta": 0.084,
+      "eta": 0.79
+    },
+    {
+      "id": "4207048",
+      "name": "JPS Setiawan",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 56.121,
+      "kappa": 0.174,
+      "theta": 0.211,
+      "eta": 0.854
+    },
+    {
+      "id": "4311001",
+      "name": "Pejabat Daerah Kampar",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 69.926,
+      "kappa": 0.148,
+      "theta": 0.149,
+      "eta": 0.813
+    },
+    {
+      "id": "4409091",
+      "name": "Rumah Pam Kubang Haji",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 52.343,
+      "kappa": 0.164,
+      "theta": 0.177,
+      "eta": 0.84
+    },
+    {
+      "id": "4511111",
+      "name": "Politeknik Ungku Umar",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 70.238,
+      "kappa": 0.164,
+      "theta": 0.288,
+      "eta": 0.872
+    },
+    {
+      "id": "4807016",
+      "name": "Bukit Larut Taiping",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 87.236,
+      "kappa": 0.165,
+      "theta": 0.258,
+      "eta": 0.842
+    },
+    {
+      "id": "4811075",
+      "name": "Rancangan Belia Perlop",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 58.234,
+      "kappa": 0.198,
+      "theta": 0.247,
+      "eta": 0.856
+    },
+    {
+      "id": "5005003",
+      "name": "Jln. Mtg. Buloh Bgn Serai",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 52.752,
+      "kappa": 0.163,
+      "theta": 0.179,
+      "eta": 0.795
+    },
+    {
+      "id": "5207001",
+      "name": "Kolam Air JKR Selama",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 59.567,
+      "kappa": 0.176,
+      "theta": 0.062,
+      "eta": 0.807
+    },
+    {
+      "id": "5210069",
+      "name": "Stesen Pem. Hutan Lawin",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 52.803,
+      "kappa": 0.169,
+      "theta": 0.219,
+      "eta": 0.838
+    },
+    {
+      "id": "5411066",
+      "name": "Kuala Kenderong",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 85.943,
+      "kappa": 0.223,
+      "theta": 0.248,
+      "eta": 0.909
+    },
+    {
+      "id": "5710061",
+      "name": "Dispensari Keroh",
+      "state": "Perak",
+      "page": 59,
+      "lambda": 53.116,
+      "kappa": 0.168,
+      "theta": 0.112,
+      "eta": 0.82
+    },
+    {
+      "id": "6401002",
+      "name": "Padang Katong, Kangar",
+      "state": "Perlis",
+      "page": 59,
+      "lambda": 57.645,
+      "kappa": 0.179,
+      "theta": 0.254,
+      "eta": 0.826
+    },
+    {
+      "id": "2815001",
+      "name": "JPS Sungai Manggis",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 56.052,
+      "kappa": 0.152,
+      "theta": 0.194,
+      "eta": 0.857
+    },
+    {
+      "id": "2913001",
+      "name": "Pusat Kwln. JPS T Gong",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 63.493,
+      "kappa": 0.17,
+      "theta": 0.254,
+      "eta": 0.872
+    },
+    {
+      "id": "2917001",
+      "name": "Setor JPS Kajang",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 59.153,
+      "kappa": 0.161,
+      "theta": 0.118,
+      "eta": 0.812
+    },
+    {
+      "id": "3117070",
+      "name": "JPS Ampang",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 65.809,
+      "kappa": 0.148,
+      "theta": 0.156,
+      "eta": 0.837
+    },
+    {
+      "id": "3118102",
+      "name": "SK Sungai Lui",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 63.155,
+      "kappa": 0.177,
+      "theta": 0.122,
+      "eta": 0.842
+    },
+    {
+      "id": "3314001",
+      "name": "Rumah Pam JPS P Setia",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 62.273,
+      "kappa": 0.175,
+      "theta": 0.205,
+      "eta": 0.841
+    },
+    {
+      "id": "3411017",
+      "name": "Setor JPS Tj. Karang",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 68.29,
+      "kappa": 0.175,
+      "theta": 0.243,
+      "eta": 0.894
+    },
+    {
+      "id": "3416002",
+      "name": "Kg Kalong Tengah",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 61.811,
+      "kappa": 0.161,
+      "theta": 0.188,
+      "eta": 0.816
+    },
+    {
+      "id": "3516022",
+      "name": "Loji Air Kuala Kubu Baru",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 67.793,
+      "kappa": 0.176,
+      "theta": 0.278,
+      "eta": 0.854
+    },
+    {
+      "id": "3710006",
+      "name": "Rmh Pam Bagan Terap",
+      "state": "Selangor",
+      "page": 59,
+      "lambda": 60.793,
+      "kappa": 0.173,
+      "theta": 0.185,
+      "eta": 0.884
+    },
+    {
+      "id": "3933001",
+      "name": "Hulu Jabor, Kemaman",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 103.519,
+      "kappa": 0.228,
+      "theta": 0.756,
+      "eta": 0.707
+    },
+    {
+      "id": "4131001",
+      "name": "Kg, Ban Ho, Kemaman",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 65.158,
+      "kappa": 0.164,
+      "theta": 0.092,
+      "eta": 0.66
+    },
+    {
+      "id": "4234109",
+      "name": "JPS Kemaman",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 55.899,
+      "kappa": 0.201,
+      "theta": 0.0,
+      "eta": 0.58
+    },
+    {
+      "id": "4332001",
+      "name": "Jambatan Tebak, Kem.",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 61.703,
+      "kappa": 0.185,
+      "theta": 0.088,
+      "eta": 0.637
+    },
+    {
+      "id": "4529001",
+      "name": "Rmh Pam Paya Kempian",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 53.693,
+      "kappa": 0.194,
+      "theta": 0.0,
+      "eta": 0.607
+    },
+    {
+      "id": "4529071",
+      "name": "SK Pasir Raja",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 48.467,
+      "kappa": 0.207,
+      "theta": 0.0,
+      "eta": 0.6
+    },
+    {
+      "id": "4631001",
+      "name": "Almuktafibillah Shah",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 66.029,
+      "kappa": 0.199,
+      "theta": 0.165,
+      "eta": 0.629
+    },
+    {
+      "id": "4734079",
+      "name": "SM Sultan Omar, Dungun",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 51.935,
+      "kappa": 0.213,
+      "theta": 0.02,
+      "eta": 0.587
+    },
+    {
+      "id": "4832077",
+      "name": "SK Jerangau",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 54.947,
+      "kappa": 0.212,
+      "theta": 0.026,
+      "eta": 0.555
+    },
+    {
+      "id": "4930038",
+      "name": "Kg Menerong, Hulu Trg",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 60.436,
+      "kappa": 0.204,
+      "theta": 0.063,
+      "eta": 0.588
+    },
+    {
+      "id": "5029034",
+      "name": "Kg Dura. Hulu Trg",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 60.51,
+      "kappa": 0.22,
+      "theta": 0.087,
+      "eta": 0.617
+    },
+    {
+      "id": "5128001",
+      "name": "Sungai Gawi, Hulu Trg",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 48.101,
+      "kappa": 0.215,
+      "theta": 0.027,
+      "eta": 0.566
+    },
+    {
+      "id": "5226001",
+      "name": "Sg Petualang, Hulu Trg",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 48.527,
+      "kappa": 0.228,
+      "theta": 0.0,
+      "eta": 0.547
+    },
+    {
+      "id": "5328044",
+      "name": "Sungai Tong, Setiu",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 52.377,
+      "kappa": 0.188,
+      "theta": 0.003,
+      "eta": 0.558
+    },
+    {
+      "id": "5331048",
+      "name": "Setor JPS K Terengganu",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 58.307,
+      "kappa": 0.21,
+      "theta": 0.123,
+      "eta": 0.555
+    },
+    {
+      "id": "5426001",
+      "name": "Kg Seladang, Hulu Setiu",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 57.695,
+      "kappa": 0.197,
+      "theta": 0.0,
+      "eta": 0.544
+    },
+    {
+      "id": "5428001",
+      "name": "Kg Bt. Hampar, Setiu",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 55.452,
+      "kappa": 0.186,
+      "theta": 0.0,
+      "eta": 0.545
+    },
+    {
+      "id": "5524002",
+      "name": "SK Panchor, Setiu Klinik",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 53.43,
+      "kappa": 0.206,
+      "theta": 0.0,
+      "eta": 0.524
+    },
+    {
+      "id": "5725006",
+      "name": "Kg Raja, Besut",
+      "state": "Terengganu",
+      "page": 59,
+      "lambda": 52.521,
+      "kappa": 0.225,
+      "theta": 0.041,
+      "eta": 0.56
+    }
+  ],
+  "patterns": {
+    "1": {
+      "15": [0.316, 0.368, 0.316],
+      "30": [0.133, 0.193, 0.211, 0.202, 0.161, 0.1],
+      "60": [0.06, 0.062, 0.084, 0.087, 0.097, 0.12, 0.115, 0.091, 0.087, 0.082, 0.061, 0.054],
+      "180": [0.06, 0.061, 0.071, 0.08, 0.11, 0.132, 0.12, 0.1, 0.078, 0.069, 0.06, 0.059],
+      "360": [0.059, 0.067, 0.071, 0.082, 0.119, 0.13, 0.123, 0.086, 0.073, 0.069, 0.063, 0.057],
+      "720": [0.07, 0.073, 0.083, 0.084, 0.097, 0.106, 0.099, 0.086, 0.084, 0.083, 0.07, 0.064],
+      "1440": [
+        0.019, 0.022, 0.027, 0.036, 0.042, 0.044, 0.048, 0.049, 0.05, 0.056, 0.058, 0.068, 0.058,
+        0.057, 0.05, 0.05, 0.048, 0.046, 0.043, 0.039, 0.028, 0.025, 0.022, 0.016
+      ],
+      "2880": [
+        0.027, 0.028, 0.029, 0.033, 0.037, 0.04, 0.046, 0.048, 0.049, 0.054, 0.058, 0.065, 0.06,
+        0.055, 0.053, 0.048, 0.046, 0.044, 0.038, 0.034, 0.03, 0.029, 0.028, 0.019
+      ],
+      "4320": [
+        0.021, 0.029, 0.03, 0.033, 0.037, 0.038, 0.042, 0.048, 0.053, 0.055, 0.058, 0.067, 0.059,
+        0.056, 0.053, 0.052, 0.047, 0.041, 0.038, 0.036, 0.033, 0.03, 0.022, 0.02
+      ]
+    },
+    "2": {
+      "15": [0.255, 0.376, 0.37],
+      "30": [0.124, 0.13, 0.365, 0.152, 0.126, 0.103],
+      "60": [0.053, 0.059, 0.063, 0.087, 0.103, 0.153, 0.11, 0.088, 0.069, 0.06, 0.057, 0.046],
+      "180": [0.053, 0.061, 0.063, 0.08, 0.128, 0.151, 0.129, 0.097, 0.079, 0.062, 0.054, 0.042],
+      "360": [0.044, 0.081, 0.083, 0.09, 0.106, 0.115, 0.114, 0.09, 0.085, 0.081, 0.074, 0.037],
+      "720": [0.045, 0.048, 0.064, 0.106, 0.124, 0.146, 0.127, 0.116, 0.081, 0.056, 0.046, 0.041],
+      "1440": [
+        0.022, 0.024, 0.029, 0.031, 0.032, 0.035, 0.039, 0.042, 0.05, 0.054, 0.065, 0.093, 0.083,
+        0.057, 0.052, 0.047, 0.04, 0.039, 0.033, 0.031, 0.029, 0.028, 0.024, 0.02
+      ],
+      "2880": [
+        0.027, 0.028, 0.029, 0.033, 0.037, 0.04, 0.046, 0.048, 0.049, 0.054, 0.058, 0.065, 0.06,
+        0.055, 0.053, 0.048, 0.046, 0.044, 0.038, 0.034, 0.03, 0.029, 0.028, 0.019
+      ],
+      "4320": [
+        0.016, 0.023, 0.027, 0.033, 0.036, 0.043, 0.047, 0.049, 0.049, 0.051, 0.067, 0.079, 0.068,
+        0.057, 0.05, 0.049, 0.048, 0.043, 0.038, 0.035, 0.03, 0.024, 0.022, 0.016
+      ]
+    },
+    "3": {
+      "15": [0.215, 0.395, 0.39],
+      "30": [0.158, 0.161, 0.21, 0.173, 0.158, 0.141],
+      "60": [0.068, 0.074, 0.077, 0.087, 0.099, 0.106, 0.104, 0.098, 0.078, 0.075, 0.072, 0.064],
+      "180": [0.06, 0.085, 0.086, 0.087, 0.1, 0.1, 0.1, 0.088, 0.087, 0.085, 0.063, 0.059],
+      "360": [0.045, 0.07, 0.078, 0.099, 0.113, 0.129, 0.121, 0.099, 0.081, 0.076, 0.047, 0.041],
+      "720": [0.04, 0.06, 0.066, 0.092, 0.114, 0.166, 0.119, 0.113, 0.081, 0.066, 0.046, 0.036],
+      "1440": [
+        0.027, 0.031, 0.033, 0.034, 0.035, 0.036, 0.039, 0.042, 0.044, 0.053, 0.056, 0.08, 0.076,
+        0.055, 0.048, 0.044, 0.041, 0.039, 0.036, 0.034, 0.033, 0.032, 0.031, 0.023
+      ],
+      "2880": [
+        0.015, 0.02, 0.026, 0.028, 0.038, 0.039, 0.045, 0.046, 0.052, 0.057, 0.069, 0.086, 0.073,
+        0.06, 0.056, 0.046, 0.045, 0.044, 0.039, 0.035, 0.028, 0.021, 0.017, 0.014
+      ],
+      "4320": [
+        0.021, 0.023, 0.024, 0.025, 0.028, 0.031, 0.044, 0.049, 0.058, 0.063, 0.074, 0.081, 0.078,
+        0.07, 0.058, 0.05, 0.044, 0.044, 0.03, 0.026, 0.025, 0.024, 0.022, 0.008
+      ]
+    },
+    "4": {
+      "15": [0.146, 0.677, 0.177],
+      "30": [0.117, 0.13, 0.374, 0.152, 0.121, 0.107],
+      "60": [0.028, 0.052, 0.064, 0.073, 0.106, 0.28, 0.119, 0.079, 0.066, 0.058, 0.042, 0.028],
+      "180": [0.019, 0.019, 0.055, 0.098, 0.164, 0.197, 0.169, 0.132, 0.095, 0.027, 0.019, 0.006],
+      "360": [0.019, 0.04, 0.045, 0.06, 0.082, 0.39, 0.171, 0.062, 0.054, 0.041, 0.02, 0.016],
+      "720": [0.041, 0.052, 0.056, 0.059, 0.12, 0.253, 0.157, 0.065, 0.058, 0.052, 0.048, 0.038],
+      "1440": [
+        0.0, 0.002, 0.007, 0.009, 0.023, 0.026, 0.027, 0.04, 0.049, 0.055, 0.112, 0.227, 0.142,
+        0.06, 0.05, 0.048, 0.034, 0.027, 0.026, 0.023, 0.008, 0.007, 0.001, 0.0
+      ],
+      "2880": [
+        0.002, 0.007, 0.018, 0.024, 0.027, 0.033, 0.037, 0.043, 0.053, 0.062, 0.08, 0.204, 0.081,
+        0.066, 0.057, 0.047, 0.037, 0.036, 0.031, 0.026, 0.018, 0.007, 0.003, 0.0
+      ],
+      "4320": [
+        0.005, 0.006, 0.011, 0.014, 0.018, 0.027, 0.028, 0.035, 0.056, 0.065, 0.116, 0.171, 0.127,
+        0.096, 0.06, 0.039, 0.034, 0.028, 0.023, 0.016, 0.011, 0.009, 0.005, 0.0
+      ]
+    },
+    "5": {
+      "15": [0.184, 0.448, 0.368],
+      "30": [0.097, 0.161, 0.4, 0.164, 0.106, 0.072],
+      "60": [0.056, 0.061, 0.065, 0.096, 0.106, 0.164, 0.108, 0.103, 0.068, 0.065, 0.058, 0.05],
+      "180": [0.048, 0.06, 0.078, 0.095, 0.097, 0.175, 0.116, 0.096, 0.093, 0.062, 0.05, 0.03],
+      "360": [0.033, 0.045, 0.092, 0.096, 0.107, 0.161, 0.118, 0.102, 0.096, 0.091, 0.037, 0.023],
+      "720": [0.003, 0.051, 0.074, 0.086, 0.14, 0.206, 0.18, 0.107, 0.081, 0.064, 0.007, 0.003],
+      "1440": [
+        0.003, 0.011, 0.015, 0.021, 0.025, 0.032, 0.047, 0.052, 0.055, 0.076, 0.087, 0.103, 0.091,
+        0.08, 0.075, 0.054, 0.048, 0.035, 0.027, 0.023, 0.017, 0.012, 0.009, 0.002
+      ],
+      "2880": [
+        0.001, 0.011, 0.015, 0.018, 0.024, 0.027, 0.031, 0.033, 0.041, 0.068, 0.129, 0.142, 0.132,
+        0.096, 0.053, 0.036, 0.033, 0.03, 0.026, 0.02, 0.017, 0.012, 0.004, 0.001
+      ],
+      "4320": [
+        0.006, 0.014, 0.019, 0.023, 0.027, 0.04, 0.049, 0.05, 0.054, 0.067, 0.072, 0.11, 0.087,
+        0.07, 0.06, 0.052, 0.05, 0.047, 0.031, 0.025, 0.022, 0.014, 0.009, 0.003
+      ]
+    }
+  }
+}

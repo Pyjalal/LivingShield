@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="tamantahan-engine" content="tamanku" />
+  <link rel="icon" href="data:," />
+  <title>LivingShield township viewport</title>
+  <style>
+    :root { --tt-bg: #f4f3ea; --tt-text: #203f3e; --tt-border: #c7d3bd; --tt-overlay-bg: #fffef7f2; --tt-scene-bg: #dce5dc; color-scheme: light; }
+    :root[data-ui-theme="dark"] { --tt-bg: #102326; --tt-text: #edf1e7; --tt-border: #395952; --tt-overlay-bg: #142e31f2; --tt-scene-bg: #102426; color-scheme: dark; }
+    :root[data-ui-theme="terminal"] { --tt-bg: #050b0a; --tt-text: #ffffff; --tt-border: #7f9d8a; --tt-overlay-bg: #0b1714fa; --tt-scene-bg: #050b0a; color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+    body { display: flex; flex-direction: column; font-family: 'Segoe UI', Arial, sans-serif; color: var(--tt-text); background: var(--tt-scene-bg); }
+    #viewport { position: relative; flex: 1 1 auto; min-height: 0; width: 100%; overflow: hidden; }
+    canvas { width: 100%; height: 100%; display: block; outline: none; touch-action: none; }
+    #status { position: absolute; inset: 0; display: grid; place-items: center; background: var(--tt-bg); pointer-events: none; }
+    #status[hidden] { display: none; }
+    footer { position: relative; flex: 0 0 auto; width: 100%; padding: 5px 8px; background: var(--tt-overlay-bg); border-top: 1px solid var(--tt-border); font-size: 10px; line-height: 1.5; }
+    footer a { color: inherit; text-underline-offset: 2px; }
+    #imagery-credit[hidden] { display: none; }
+    #terrain-credit[hidden], #flood-readout[hidden] { display: none; }
+    #flood-readout { position: absolute; bottom: 8px; right: 8px; width: fit-content; max-width: 45%; padding: 6px 9px; background: var(--tt-overlay-bg); color: var(--tt-text); border: 1px solid var(--tt-border); border-radius: 5px; font-size: 11px; line-height: 1.4; pointer-events: none; }
+    @media (max-width:600px) { #flood-readout { display: none; } footer { font-size:8px; line-height:1.4; padding:4px 6px; } }
+  </style>
+</head>
+<body>
+  <div id="viewport"></div>
+  <div id="status" role="status">Preparing the township viewport…</div>
+  <div id="flood-readout" role="status" aria-live="off" hidden></div>
+  <footer>
+    <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a> ·
+    <span id="microsoft-credit" hidden><a href="https://github.com/microsoft/GlobalMLBuildingFootprints" target="_blank" rel="noopener">Microsoft ML footprints</a> (<a href="https://cdla.dev/permissive-2-0/" target="_blank" rel="noopener">CDLA Permissive 2.0</a>) · </span>
+    <a href="./THIRD_PARTY.md" target="_blank" rel="noopener">Source notices</a>
+    <span id="imagery-credit" hidden> · Imagery © Esri and contributors · Roof colours sampled approximately from imagery</span>
+    <span id="terrain-credit" hidden> · Produced using Copernicus WorldDEM-30 © DLR e.V. 2010–2014 and © Airbus Defence and Space GmbH 2014–2018 provided under COPERNICUS by the European Union and ESA; all rights reserved · Surface elevations, not surveyed ground levels</span>
+  </footer>
+  <script src="./vendor/three.min.js"></script>
+  <script src="./vendor/OrbitControls.js"></script>
+  <script src="./bridge.js"></script>
+</body>
+</html>

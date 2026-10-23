@@ -1,0 +1,510 @@
+.app-content {
+  min-height: 0;
+}
+.my-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 9px 18px;
+  background: var(--hg-panel);
+  border-bottom: 1px solid var(--hg-border);
+  color: var(--hg-text);
+  flex-shrink: 0;
+  font-size: 11px;
+  position: relative;
+  z-index: 900;
+  flex-wrap: wrap;
+}
+.my-toolbar label {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.my-toolbar select,
+.my-label select {
+  font: inherit;
+  background: var(--hg-bg);
+  color: var(--hg-text);
+  border: 1px solid var(--hg-border);
+  padding: 7px;
+  max-width: 270px;
+  border-radius: 3px;
+}
+.my-idf-label {
+  flex: 1;
+}
+.my-idf-label select {
+  flex: 1;
+  max-width: 430px;
+}
+.my-coverage {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 10px;
+}
+.my-coverage small {
+  opacity: 0.65;
+  font-size: 9px;
+}
+.my-toolbar .precip-btn {
+  white-space: nowrap;
+  padding: 7px 9px;
+}
+.my-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: var(--tt-overlay-bg);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.my-dialog {
+  background: var(--hg-panel);
+  color: var(--hg-text);
+  border: 1px solid var(--hg-border);
+  padding: 25px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  font-size: 12px;
+  line-height: 1.7;
+}
+.my-dialog h2 {
+  font-size: 20px;
+}
+.my-dialog h3 {
+  margin: 25px 0 10px;
+  font-size: 15px;
+}
+.my-dialog p {
+  margin: 10px 0;
+}
+.my-dialog ul {
+  padding-left: 20px;
+}
+.my-dialog a {
+  color: var(--hg-green);
+  text-decoration: underline;
+}
+.my-dialog details {
+  padding: 10px;
+  border: 1px solid var(--hg-border);
+  margin: 6px 0;
+}
+.my-dialog summary {
+  cursor: pointer;
+}
+.my-dialog-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+.my-weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 8px;
+}
+.my-weather-grid article {
+  padding: 12px;
+  border: 1px solid var(--hg-border);
+}
+.my-file {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 11px;
+  margin: 15px 0;
+}
+.my-file input {
+  max-width: 100%;
+  font: inherit;
+  color: inherit;
+}
+.my-error {
+  color: var(--tt-error);
+  line-height: 1.6;
+  margin: 9px 0;
+}
+.my-label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+.my-explorer-map {
+  height: 38%;
+  min-height: 250px;
+  position: relative;
+  flex-shrink: 0;
+}
+.my-explorer-map .precip-map-full {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+}
+.my-explorer-charts {
+  overflow: auto;
+  padding: 18px;
+  flex: 1;
+  min-height: 200px;
+}
+.my-explorer-charts h3 {
+  font-size: 16px;
+  margin: 0 0 8px;
+}
+.my-explorer-charts p {
+  font-size: 11px;
+  line-height: 1.6;
+}
+.my-station-list {
+  max-height: 350px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.my-station-list button {
+  text-align: left;
+}
+.my-station-list strong {
+  display: block;
+  font-size: 11px;
+}
+.my-station-list small {
+  display: block;
+  font-size: 9px;
+  margin-top: 5px;
+  opacity: 0.65;
+}
+.my-station-list button.selected {
+  border-color: var(--hg-green);
+  background: var(--tt-accent-soft);
+}
+.my-chart {
+  height: 290px;
+  min-width: 0;
+  margin-top: 16px;
+}
+.my-chart text {
+  fill: var(--hg-muted);
+}
+.my-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 15px;
+}
+.my-actions {
+  display: flex;
+  gap: 8px;
+}
+.my-site-report-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  font-size: 11px;
+  line-height: 1.7;
+}
+.my-site-report-grid p {
+  margin: 8px 0;
+}
+.my-site-report-grid small {
+  opacity: 0.6;
+}
+.theme-dark img[src*='tile.openstreetmap.org'] {
+  filter: invert(100%) hue-rotate(180deg) brightness(0.78) contrast(0.95);
+}
+.my-method-warning {
+  padding: 10px;
+  border-left: 2px solid var(--tt-warning);
+  background: var(--tt-warning-bg);
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 10px 0;
+}
+.my-rate-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--hg-border);
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 11px;
+}
+.my-rate-card a {
+  color: var(--hg-green);
+}
+.my-rate-card strong {
+  white-space: nowrap;
+}
+.my-rate-card small {
+  opacity: 0.6;
+}
+.my-catalogue {
+  max-height: 190px;
+  overflow: auto;
+}
+.my-filter-input {
+  max-width: 180px;
+}
+.my-theme-caption {
+  opacity: 0.6;
+  font-size: 10px;
+  margin: 10px 0;
+}
+.my-footer-source {
+  font-size: 10px;
+  opacity: 0.65;
+  margin-top: 14px;
+  line-height: 1.8;
+}
+.my-map-click-hint {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  z-index: 700;
+  background: var(--hg-panel);
+  padding: 8px;
+  border: 1px solid var(--hg-border);
+  font-size: 10px;
+}
+.my-table-empty {
+  padding: 18px;
+  font-size: 11px;
+}
+.my-popup-properties {
+  max-height: 170px;
+  overflow: auto;
+}
+.my-hidden {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .my-toolbar {
+    gap: 9px;
+  }
+  .my-coverage {
+    display: none;
+  }
+  .my-toolbar select {
+    max-width: 240px;
+  }
+  .my-toolbar .my-idf-label {
+    min-width: 300px;
+  }
+  .my-site-report-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .app {
+    padding-top: 40px;
+    box-sizing: border-box;
+  }
+  .app-content {
+    margin-top: 0;
+    height: auto;
+    flex: 1 1 0%;
+  }
+  .sidebar {
+    position: absolute;
+    top: 0;
+  }
+  .sidebar-open-btn {
+    top: 8px;
+  }
+  .precip-main {
+    overflow: auto;
+  }
+  .sim-split-main {
+    height: auto;
+    min-height: 100%;
+    overflow: visible;
+  }
+  .sim-charts-area {
+    max-height: none;
+    overflow: visible;
+    flex-shrink: 0;
+  }
+  .my-toolbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 8px 10px;
+    font-size: 10px;
+  }
+  .my-toolbar label {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    grid-column: 1 / -1;
+    flex: 1;
+    min-width: 0;
+  }
+  .my-toolbar .my-idf-label {
+    min-width: 220px;
+  }
+  .my-toolbar select {
+    max-width: 100%;
+    width: 100%;
+    font-size: 10px;
+  }
+  .my-toolbar .precip-btn {
+    font-size: 9px;
+    width: auto;
+  }
+  .my-explorer-map {
+    min-height: 260px;
+    height: 300px;
+  }
+  .my-explorer-charts {
+    overflow: visible;
+    min-height: 300px;
+    flex: none;
+    padding: 12px;
+  }
+  .my-dialog-backdrop {
+    padding: 10px;
+  }
+  .my-dialog {
+    padding: 15px;
+    max-height: 95vh;
+  }
+  .my-dialog h2 {
+    font-size: 16px;
+  }
+  .my-site-report-grid {
+    grid-template-columns: 1fr;
+  }
+  .my-section-heading {
+    align-items: start;
+  }
+  .my-chart {
+    height: 250px;
+  }
+  .my-toolbar .my-idf-label {
+    min-width: 0;
+    order: 0;
+  }
+  .my-station-list {
+    max-height: 200px;
+  }
+  .my-coverage {
+    display: none;
+  }
+  .my-weather-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .landing * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.my-national-context {
+  border-top: 1px solid var(--hg-border);
+  margin-top: 16px;
+  padding-top: 12px;
+  overflow-wrap: anywhere;
+}
+.my-national-context p {
+  line-height: 1.5;
+}
+.my-national-context small {
+  display: block;
+  line-height: 1.4;
+}
+.my-hazard-legend {
+  position: absolute;
+  bottom: 25px;
+  left: 12px;
+  z-index: 800;
+  width: min(330px, calc(100% - 70px));
+  background: var(--hg-panel);
+  color: var(--hg-text);
+  border: 1px solid var(--tt-border-strong);
+  padding: 10px;
+  font-size: 11px;
+  pointer-events: auto;
+}
+.my-hazard-legend strong,
+.my-hazard-legend span,
+.my-hazard-legend small {
+  display: block;
+  margin-bottom: 5px;
+}
+.my-hazard-legend i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-left: 5px;
+}
+.my-hazard-popup .leaflet-popup-content {
+  max-height: 55vh;
+  overflow: auto;
+  margin: 14px;
+}
+.my-hazard-popup .my-site-report-grid {
+  display: block;
+}
+.my-hazard-popup .my-site-report-grid > div {
+  margin: 12px 0;
+}
+.my-worldcover-legend {
+  position: absolute;
+  top: 65px;
+  right: 12px;
+  z-index: 800;
+  max-width: 210px;
+  max-height: 55vh;
+  overflow: auto;
+  padding: 10px;
+  background: var(--hg-panel);
+  color: var(--hg-text);
+  border: 1px solid var(--tt-border-strong);
+  font-size: 11px;
+}
+.my-worldcover-legend summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+.my-worldcover-legend div {
+  margin: 5px 0;
+}
+.my-worldcover-legend i {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 7px;
+}
+.my-hazard-site-inspector {
+  position: absolute;
+  top: 65px;
+  right: 12px;
+  z-index: 850;
+  width: min(380px, calc(100% - 24px));
+  max-height: 70%;
+  overflow: auto;
+  padding: 14px;
+  background: var(--hg-panel);
+  color: var(--hg-text);
+  border: 1px solid var(--tt-border-strong);
+  font-size: 12px;
+}
+.my-hazard-site-inspector .my-site-report-grid {
+  display: block;
+}
+.my-hazard-site-inspector .my-national-context {
+  margin-top: 5px;
+}
+.my-hazard-site-inspector h4 {
+  padding-right: 10px;
+}

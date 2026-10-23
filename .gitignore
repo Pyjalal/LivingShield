@@ -1,0 +1,24 @@
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
+.playwright-cli/
+app/.playwright-cli/
+app/output/*.txt
+app/output/*.log
+app/output/playwright/assets-check.*
+
+app/output/playwright/ls-*.png
+app/output/playwright/ls-*.json
+app/output/playwright/livingshield-*.png
+app/output/playwright/riverlab-*.png
+app/output/playwright/riverlab-*.json
+app/output/competitor-functional/
+app/output/competitive-refresh/
+app/output/playwright/closure-*
+app/output/playwright/ls-readable-brief.html
+
+# Local QA output
+app/output/

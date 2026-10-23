@@ -1,0 +1,216 @@
+.ls-review-plan {
+  margin-top: 26px;
+  padding: 28px;
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 8px;
+  background: var(--tt-surface);
+}
+.ls-review-context {
+  flex-shrink: 0;
+}
+.ls-evidence .ls-review-context > a {
+  font-size: 12px;
+  margin-top: 10px;
+  min-height: 24px;
+}
+.ls-review-plan > header,
+.ls-review-plan > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 24px;
+}
+.ls-review-plan > header > div {
+  max-width: 780px;
+}
+.ls-review-plan > header p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+.ls-review-status {
+  flex-shrink: 0;
+  padding: 7px 11px;
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 650;
+  background: var(--tt-surface-raised);
+}
+.ls-review-status[data-prepared='true'] {
+  color: var(--tt-accent);
+  background: var(--tt-accent-soft);
+}
+.ls-review-route {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  list-style: none;
+  padding: 20px 0;
+  margin: 22px 0;
+  border-block: 1px solid var(--tt-border);
+  gap: 24px;
+}
+.ls-review-route li {
+  display: flex;
+  gap: 10px;
+  align-items: start;
+  font-size: 12px;
+}
+.ls-review-route li > span {
+  font: 400 24px var(--tt-font-heading);
+  color: var(--tt-accent);
+}
+.ls-review-route strong {
+  display: block;
+  line-height: 1.5;
+}
+.ls-review-route li[aria-current='step'] strong {
+  color: var(--tt-accent);
+}
+.ls-review-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: 32px;
+}
+.ls-review-fields,
+.ls-review-fields > label,
+.ls-review-pair > label {
+  display: grid;
+  gap: 8px;
+  min-width: 0;
+}
+.ls-review-fields {
+  gap: 18px;
+}
+.ls-review-pair {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 16px;
+}
+.ls-review-fields label {
+  font-size: 12px;
+  font-weight: 600;
+}
+.ls-review-fields input,
+.ls-review-fields textarea,
+.ls-review-fields select {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  border: 1px solid var(--tt-border-strong);
+  border-radius: 4px;
+  padding: 10px;
+  color: var(--tt-text);
+  background: var(--tt-surface-raised);
+  font: 400 13px/1.5 var(--tt-font);
+}
+.ls-review-fields textarea {
+  resize: vertical;
+}
+.ls-review-required,
+.ls-review-optional {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--tt-muted);
+}
+.ls-review-plan .ls-review-hint {
+  font-size: 11px;
+  margin: 0;
+}
+.ls-review-evidence {
+  border: 0;
+  padding: 0;
+  min-width: 0;
+}
+.ls-review-evidence legend {
+  font-weight: 650;
+  font-size: 13px;
+}
+.ls-review-evidence p {
+  margin-top: 8px;
+  font-size: 12px;
+}
+.ls-review-evidence label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  padding: 6px 0;
+  border-top: 1px solid var(--tt-border);
+  font-size: 12px;
+  cursor: pointer;
+}
+.ls-review-evidence input {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--tt-accent);
+}
+.ls-review-evidence small {
+  margin-top: 8px;
+}
+.ls-review-plan > footer {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--tt-border);
+  align-items: center;
+}
+.ls-review-plan > footer strong,
+.ls-review-plan > footer p {
+  font-size: 12px;
+}
+.ls-review-plan > footer p {
+  margin-bottom: 0;
+  max-width: 680px;
+}
+.ls-evidence .ls-review-prepare {
+  margin: 0;
+  min-height: 44px;
+  flex-shrink: 0;
+  color: var(--tt-accent-contrast);
+  background: var(--tt-accent);
+}
+.ls-evidence .ls-review-prepare:disabled {
+  color: var(--tt-muted);
+  background: var(--tt-surface-raised);
+  cursor: default;
+}
+.ls-review-plan :is(input, textarea, select, button):focus-visible {
+  outline: 2px solid var(--tt-accent);
+  outline-offset: 3px;
+}
+@media (max-width: 850px) {
+  .ls-review-plan {
+    padding: 20px;
+  }
+  .ls-review-plan > header,
+  .ls-review-plan > footer {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  .ls-review-status {
+    align-self: start;
+  }
+  .ls-review-body {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+  .ls-review-route {
+    gap: 14px;
+  }
+}
+@media (max-width: 500px) {
+  .ls-review-plan {
+    padding: 16px;
+  }
+  .ls-review-plan h2 {
+    font-size: 25px;
+  }
+  .ls-review-route,
+  .ls-review-pair {
+    grid-template-columns: 1fr;
+  }
+  .ls-review-route {
+    gap: 18px;
+  }
+}

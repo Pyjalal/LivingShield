@@ -1,0 +1,1302 @@
+[
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/SHARES/T735_RIVER/MapServer/0",
+    "count": {
+      "count": 565026
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 109.5423660735684,
+        "ymin": 0.8560570146336981,
+        "xmax": 115.67460105268536,
+        "ymax": 4.99314333571563,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPolyline",
+    "fields": [
+      {
+        "name": "OBJECTID",
+        "alias": "OBJECTID"
+      },
+      {
+        "name": "Shape",
+        "alias": "Shape"
+      },
+      {
+        "name": "FNODE_",
+        "alias": "FNODE_"
+      },
+      {
+        "name": "TNODE_",
+        "alias": "TNODE_"
+      },
+      {
+        "name": "LPOLY_",
+        "alias": "LPOLY_"
+      },
+      {
+        "name": "RPOLY_",
+        "alias": "RPOLY_"
+      },
+      {
+        "name": "LENGTH",
+        "alias": "LENGTH"
+      },
+      {
+        "name": "RV210915_",
+        "alias": "RV210915_"
+      },
+      {
+        "name": "RV210915_I",
+        "alias": "RV210915_I"
+      },
+      {
+        "name": "RVTYPE",
+        "alias": "RVTYPE"
+      },
+      {
+        "name": "RVNAME",
+        "alias": "RVNAME"
+      },
+      {
+        "name": "Shape_Length",
+        "alias": "Shape_Length"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Map,Query,Data",
+    "advanced": {
+      "useStandardizedQueries": true,
+      "supportsStatistics": true,
+      "supportsPercentileStatistics": true,
+      "supportsHavingClause": true,
+      "supportsOrderBy": true,
+      "supportsDistinct": true,
+      "supportsCountDistinct": true,
+      "supportsPagination": true,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsReturningQueryExtent": true,
+      "supportsQueryWithDistance": true,
+      "supportsSqlExpression": true,
+      "supportsTimeRelation": true,
+      "supportsSqlFormat": false,
+      "supportsQueryAnalytic": false
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                109.6392,
+                2.06639
+              ],
+              [
+                109.63997,
+                2.06612
+              ],
+              [
+                109.64021,
+                2.06576
+              ],
+              [
+                109.64032,
+                2.06501
+              ],
+              [
+                109.64076,
+                2.06463
+              ],
+              [
+                109.64339,
+                2.06362
+              ]
+            ]
+          },
+          "properties": {
+            "OBJECTID": 1,
+            "FNODE_": 1,
+            "TNODE_": 2,
+            "LPOLY_": 1,
+            "RPOLY_": 1,
+            "LENGTH": 605.96566,
+            "RV210915_": 1,
+            "RV210915_I": 16,
+            "RVTYPE": "RV02",
+            "RVNAME": " ",
+            "Shape_Length": 607.6195144920615
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/SHARES/T735_WATER_FEATURE/MapServer/0",
+    "count": {
+      "count": 304
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 109.85916272300233,
+        "ymin": 1.1316162239369485,
+        "xmax": 115.40380925975505,
+        "ymax": 4.5867079931149055,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPoint",
+    "fields": [
+      {
+        "name": "OBJECTID",
+        "alias": "OBJECTID"
+      },
+      {
+        "name": "Shape",
+        "alias": "Shape"
+      },
+      {
+        "name": "AREA",
+        "alias": "AREA"
+      },
+      {
+        "name": "PERIMETER",
+        "alias": "PERIMETER"
+      },
+      {
+        "name": "WF41157_",
+        "alias": "WF41157_"
+      },
+      {
+        "name": "WF41157_ID",
+        "alias": "WF41157_ID"
+      },
+      {
+        "name": "WFTYPE",
+        "alias": "WFTYPE"
+      },
+      {
+        "name": "WFNAME",
+        "alias": "WFNAME"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Map,Query,Data",
+    "advanced": {
+      "useStandardizedQueries": true,
+      "supportsStatistics": true,
+      "supportsPercentileStatistics": true,
+      "supportsHavingClause": true,
+      "supportsOrderBy": true,
+      "supportsDistinct": true,
+      "supportsCountDistinct": true,
+      "supportsPagination": true,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsReturningQueryExtent": true,
+      "supportsQueryWithDistance": true,
+      "supportsSqlExpression": true,
+      "supportsTimeRelation": true,
+      "supportsSqlFormat": false,
+      "supportsQueryAnalytic": false
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              110.26286,
+              1.13162
+            ]
+          },
+          "properties": {
+            "OBJECTID": 1,
+            "AREA": 0,
+            "PERIMETER": 0,
+            "WF41157_": 0,
+            "WF41157_ID": 0,
+            "WFTYPE": "WF07",
+            "WFNAME": " "
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/SHARES/T735_Landuse/MapServer/0",
+    "count": {
+      "count": 33841
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 109.50054197171795,
+        "ymin": 0.7427122787144519,
+        "xmax": 115.76121842192791,
+        "ymax": 5.006150931118347,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPolygon",
+    "fields": [
+      {
+        "name": "FID",
+        "alias": "FID"
+      },
+      {
+        "name": "Shape",
+        "alias": "Shape"
+      },
+      {
+        "name": "AREA",
+        "alias": "AREA"
+      },
+      {
+        "name": "PERIMETER",
+        "alias": "PERIMETER"
+      },
+      {
+        "name": "LU111312_",
+        "alias": "LU111312_"
+      },
+      {
+        "name": "LU111312_I",
+        "alias": "LU111312_I"
+      },
+      {
+        "name": "LUTYPE",
+        "alias": "LUTYPE"
+      },
+      {
+        "name": "LUNAME",
+        "alias": "LUNAME"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Map,Query,Data",
+    "advanced": {
+      "useStandardizedQueries": true,
+      "supportsStatistics": false,
+      "supportsPercentileStatistics": false,
+      "supportsHavingClause": false,
+      "supportsOrderBy": false,
+      "supportsDistinct": false,
+      "supportsCountDistinct": false,
+      "supportsPagination": false,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsReturningQueryExtent": true,
+      "supportsQueryWithDistance": true,
+      "supportsSqlExpression": false,
+      "supportsTimeRelation": true,
+      "supportsSqlFormat": false,
+      "supportsQueryAnalytic": false
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  115.20386,
+                  3.49927
+                ],
+                [
+                  115.20274,
+                  3.49659
+                ],
+                [
+                  115.20248,
+                  3.49387
+                ],
+                [
+                  115.20222,
+                  3.49291
+                ],
+                [
+                  115.20228,
+                  3.49153
+                ],
+                [
+                  115.20244,
+                  3.49088
+                ],
+                [
+                  115.20302,
+                  3.48985
+                ],
+                [
+                  115.2038,
+                  3.48899
+                ],
+                [
+                  115.20487,
+                  3.48836
+                ],
+                [
+                  115.20593,
+                  3.48861
+                ],
+                [
+                  115.20632,
+                  3.48835
+                ],
+                [
+                  115.20627,
+                  3.48723
+                ],
+                [
+                  115.20551,
+                  3.48489
+                ],
+                [
+                  115.2059,
+                  3.48365
+                ],
+                [
+                  115.20642,
+                  3.48308
+                ],
+                [
+                  115.20843,
+                  3.48185
+                ],
+                [
+                  115.20993,
+                  3.48142
+                ],
+                [
+                  115.21126,
+                  3.48048
+                ],
+                [
+                  115.21154,
+                  3.48044
+                ],
+                [
+                  115.21263,
+                  3.48146
+                ],
+                [
+                  115.21326,
+                  3.48174
+                ],
+                [
+                  115.21418,
+                  3.48176
+                ],
+                [
+                  115.21589,
+                  3.48145
+                ],
+                [
+                  115.21646,
+                  3.48121
+                ],
+                [
+                  115.21698,
+                  3.48083
+                ],
+                [
+                  115.21842,
+                  3.47874
+                ],
+                [
+                  115.21883,
+                  3.47861
+                ],
+                [
+                  115.2202,
+                  3.47876
+                ],
+                [
+                  115.22056,
+                  3.47863
+                ],
+                [
+                  115.22093,
+                  3.47836
+                ],
+                [
+                  115.22181,
+                  3.47676
+                ],
+                [
+                  115.2225,
+                  3.47635
+                ],
+                [
+                  115.22421,
+                  3.47591
+                ],
+                [
+                  115.22594,
+                  3.47437
+                ],
+                [
+                  115.22659,
+                  3.47431
+                ],
+                [
+                  115.22808,
+                  3.47491
+                ],
+                [
+                  115.22916,
+                  3.4749
+                ],
+                [
+                  115.23077,
+                  3.47425
+                ],
+                [
+                  115.23124,
+                  3.4743
+                ],
+                [
+                  115.23237,
+                  3.47378
+                ],
+                [
+                  115.23256,
+                  3.47391
+                ],
+                [
+                  115.23264,
+                  3.47451
+                ],
+                [
+                  115.23299,
+                  3.47494
+                ],
+                [
+                  115.23423,
+                  3.47611
+                ],
+                [
+                  115.23534,
+                  3.47686
+                ],
+                [
+                  115.23631,
+                  3.47671
+                ],
+                [
+                  115.23805,
+                  3.47568
+                ],
+                [
+                  115.23906,
+                  3.47553
+                ],
+                [
+                  115.23883,
+                  3.47604
+                ],
+                [
+                  115.23788,
+                  3.47721
+                ],
+                [
+                  115.2375,
+                  3.47741
+                ],
+                [
+                  115.23626,
+                  3.47744
+                ],
+                [
+                  115.23472,
+                  3.4772
+                ],
+                [
+                  115.23355,
+                  3.4765
+                ],
+                [
+                  115.23213,
+                  3.47535
+                ],
+                [
+                  115.23153,
+                  3.47554
+                ],
+                [
+                  115.23101,
+                  3.47625
+                ],
+                [
+                  115.22865,
+                  3.47701
+                ],
+                [
+                  115.2281,
+                  3.47679
+                ],
+                [
+                  115.22726,
+                  3.47569
+                ],
+                [
+                  115.22691,
+                  3.47545
+                ],
+                [
+                  115.2258,
+                  3.4753
+                ],
+                [
+                  115.22534,
+                  3.47559
+                ],
+                [
+                  115.22475,
+                  3.47605
+                ],
+                [
+                  115.22447,
+                  3.4766
+                ],
+                [
+                  115.2243,
+                  3.47848
+                ],
+                [
+                  115.22243,
+                  3.48008
+                ],
+                [
+                  115.22126,
+                  3.48066
+                ],
+                [
+                  115.21957,
+                  3.48087
+                ],
+                [
+                  115.21838,
+                  3.48082
+                ],
+                [
+                  115.21794,
+                  3.48108
+                ],
+                [
+                  115.21752,
+                  3.48206
+                ],
+                [
+                  115.21734,
+                  3.48313
+                ],
+                [
+                  115.21648,
+                  3.48338
+                ],
+                [
+                  115.21657,
+                  3.48349
+                ],
+                [
+                  115.21715,
+                  3.48356
+                ],
+                [
+                  115.21746,
+                  3.48342
+                ],
+                [
+                  115.21804,
+                  3.48144
+                ],
+                [
+                  115.21835,
+                  3.48116
+                ],
+                [
+                  115.22087,
+                  3.48103
+                ],
+                [
+                  115.21883,
+                  3.48237
+                ],
+                [
+                  115.21814,
+                  3.48384
+                ],
+                [
+                  115.21775,
+                  3.4841
+                ],
+                [
+                  115.21728,
+                  3.48417
+                ],
+                [
+                  115.21595,
+                  3.48374
+                ],
+                [
+                  115.21429,
+                  3.48393
+                ],
+                [
+                  115.21373,
+                  3.48425
+                ],
+                [
+                  115.21214,
+                  3.48591
+                ],
+                [
+                  115.21084,
+                  3.48626
+                ],
+                [
+                  115.21,
+                  3.48684
+                ],
+                [
+                  115.20955,
+                  3.48856
+                ],
+                [
+                  115.20844,
+                  3.48979
+                ],
+                [
+                  115.20797,
+                  3.49055
+                ],
+                [
+                  115.20675,
+                  3.49136
+                ],
+                [
+                  115.20588,
+                  3.49243
+                ],
+                [
+                  115.20591,
+                  3.49588
+                ],
+                [
+                  115.20533,
+                  3.49763
+                ],
+                [
+                  115.20545,
+                  3.49872
+                ],
+                [
+                  115.20576,
+                  3.49927
+                ],
+                [
+                  115.20386,
+                  3.49927
+                ]
+              ],
+              [
+                [
+                  115.20908,
+                  3.48495
+                ],
+                [
+                  115.2097,
+                  3.48501
+                ],
+                [
+                  115.21058,
+                  3.48464
+                ],
+                [
+                  115.21163,
+                  3.48446
+                ],
+                [
+                  115.21179,
+                  3.48408
+                ],
+                [
+                  115.21118,
+                  3.48364
+                ],
+                [
+                  115.20892,
+                  3.48412
+                ],
+                [
+                  115.2088,
+                  3.48428
+                ],
+                [
+                  115.20908,
+                  3.48495
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "FID": 1,
+            "AREA": 1579649.41454,
+            "PERIMETER": 14622.40495,
+            "LU111312_": 0,
+            "LU111312_I": 0,
+            "LUTYPE": "LU55",
+            "LUNAME": " "
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/mficord/irrigation_canal/FeatureServer/1",
+    "count": {
+      "count": 11
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 110.69260620985143,
+        "ymin": 1.3370909866221208,
+        "xmax": 110.6999301762487,
+        "ymax": 1.3432661323865112,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPolyline",
+    "fields": [
+      {
+        "name": "objectid",
+        "alias": "OBJECTID"
+      },
+      {
+        "name": "water_level",
+        "alias": "water_level"
+      },
+      {
+        "name": "ph_level",
+        "alias": "ph_level"
+      },
+      {
+        "name": "flow_rate",
+        "alias": "flow_rate"
+      },
+      {
+        "name": "temperature",
+        "alias": "temperature"
+      },
+      {
+        "name": "turbidity",
+        "alias": "turbidity"
+      },
+      {
+        "name": "last_update",
+        "alias": "last_update"
+      },
+      {
+        "name": "canal_width",
+        "alias": "canal_width"
+      },
+      {
+        "name": "Shape__Length",
+        "alias": "st_length(shape)"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Query,Create,Update,Delete,Uploads,Editing",
+    "advanced": {
+      "supportsPagination": true,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDistance": true,
+      "supportsReturningQueryExtent": true,
+      "supportsStatistics": true,
+      "supportsPercentileStatistics": true,
+      "supportsHavingClause": true,
+      "supportsOrderBy": true,
+      "supportsDistinct": true,
+      "supportsCountDistinct": true,
+      "supportsQueryWithResultType": true,
+      "supportsReturningGeometryCentroid": false,
+      "supportsSqlExpression": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsQueryAnalytic": true
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                110.69804,
+                1.34327
+              ],
+              [
+                110.69807,
+                1.34124
+              ]
+            ]
+          },
+          "properties": {
+            "objectid": 1,
+            "water_level": 0.5,
+            "ph_level": null,
+            "flow_rate": 5,
+            "temperature": null,
+            "turbidity": null,
+            "last_update": 1785859303000,
+            "canal_width": 900,
+            "Shape__Length": 224.56729157596752
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/mficord/Storage_Pond/FeatureServer/1",
+    "count": {
+      "count": 1
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 110.6969267845766,
+        "ymin": 1.3432518317483386,
+        "xmax": 110.69887575470473,
+        "ymax": 1.3451213821442358,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPolygon",
+    "fields": [
+      {
+        "name": "objectid",
+        "alias": "OBJECTID"
+      },
+      {
+        "name": "location",
+        "alias": "Location"
+      },
+      {
+        "name": "water_level",
+        "alias": "water_level"
+      },
+      {
+        "name": "ph_level",
+        "alias": "ph_level"
+      },
+      {
+        "name": "flow_rate",
+        "alias": "flow_rate"
+      },
+      {
+        "name": "temperature",
+        "alias": "temperature"
+      },
+      {
+        "name": "turbidity",
+        "alias": "turbidity"
+      },
+      {
+        "name": "remark",
+        "alias": "remark"
+      },
+      {
+        "name": "last_update",
+        "alias": "last_update"
+      },
+      {
+        "name": "Shape__Area",
+        "alias": "st_area(shape)"
+      },
+      {
+        "name": "Shape__Length",
+        "alias": "st_length(shape)"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Query,Create,Update,Delete,Uploads,Editing",
+    "advanced": {
+      "supportsPagination": true,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDistance": true,
+      "supportsReturningQueryExtent": true,
+      "supportsStatistics": true,
+      "supportsPercentileStatistics": true,
+      "supportsHavingClause": true,
+      "supportsOrderBy": true,
+      "supportsDistinct": true,
+      "supportsCountDistinct": true,
+      "supportsQueryWithResultType": true,
+      "supportsReturningGeometryCentroid": true,
+      "supportsSqlExpression": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsQueryAnalytic": true
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Polygon",
+            "coordinates": [
+              [
+                [
+                  110.69693,
+                  1.34442
+                ],
+                [
+                  110.69695,
+                  1.34325
+                ],
+                [
+                  110.69888,
+                  1.34329
+                ],
+                [
+                  110.69885,
+                  1.34512
+                ],
+                [
+                  110.69757,
+                  1.345
+                ],
+                [
+                  110.69693,
+                  1.34442
+                ]
+              ]
+            ]
+          },
+          "properties": {
+            "objectid": 1,
+            "location": null,
+            "water_level": 2,
+            "ph_level": 6.5,
+            "flow_rate": 50,
+            "temperature": 28,
+            "turbidity": "murky",
+            "remark": null,
+            "last_update": 1785929647000,
+            "Shape__Area": 39761.623558432024,
+            "Shape__Length": 785.4908244574358
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/mficord/WaterLevel/FeatureServer/1",
+    "count": {
+      "count": 121
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 109.92373300235154,
+        "ymin": 1.0433014706117893,
+        "xmax": 115.34038263452555,
+        "ymax": 4.595420845989673,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPoint",
+    "fields": [
+      {
+        "name": "objectid",
+        "alias": "ObjectID"
+      },
+      {
+        "name": "record_no",
+        "alias": "Record No"
+      },
+      {
+        "name": "station_id",
+        "alias": "Station ID"
+      },
+      {
+        "name": "station_name",
+        "alias": "Station Name"
+      },
+      {
+        "name": "station_type",
+        "alias": "Station Type"
+      },
+      {
+        "name": "division",
+        "alias": "Division"
+      },
+      {
+        "name": "division_id",
+        "alias": "Division ID"
+      },
+      {
+        "name": "river_basin",
+        "alias": "River Basin"
+      },
+      {
+        "name": "latitude",
+        "alias": "Latitude"
+      },
+      {
+        "name": "longitude",
+        "alias": "Longitude"
+      },
+      {
+        "name": "normal_level__m_",
+        "alias": "Normal Level (m)"
+      },
+      {
+        "name": "alert_level__m_",
+        "alias": "Alert Level (m)"
+      },
+      {
+        "name": "warning_level__m_",
+        "alias": "Warning Level (m)"
+      },
+      {
+        "name": "danger_level__m_",
+        "alias": "Danger Level (m)"
+      },
+      {
+        "name": "current_reading__m_",
+        "alias": "Current Reading (m)"
+      },
+      {
+        "name": "status",
+        "alias": "Status"
+      },
+      {
+        "name": "timestamp",
+        "alias": "Timestamp"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Query,Create,Update,Delete,Uploads,Editing",
+    "advanced": {
+      "supportsPagination": true,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDistance": true,
+      "supportsReturningQueryExtent": true,
+      "supportsStatistics": true,
+      "supportsPercentileStatistics": true,
+      "supportsHavingClause": true,
+      "supportsOrderBy": true,
+      "supportsDistinct": true,
+      "supportsCountDistinct": true,
+      "supportsQueryWithResultType": true,
+      "supportsReturningGeometryCentroid": false,
+      "supportsSqlExpression": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsQueryAnalytic": true
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              109.92373,
+              1.50257
+            ]
+          },
+          "properties": {
+            "objectid": 1,
+            "record_no": 1,
+            "station_id": "101213",
+            "station_name": "Ulu Batang Kayan",
+            "station_type": "Combine",
+            "division": "Kuching",
+            "division_id": 1,
+            "river_basin": "Batang Kayan",
+            "latitude": 1.5026020000000002,
+            "longitude": 109.92377499999999,
+            "normal_level__m_": 3,
+            "alert_level__m_": 13,
+            "warning_level__m_": 14,
+            "danger_level__m_": 15,
+            "current_reading__m_": 4.53,
+            "status": "Normal",
+            "timestamp": "06-08-2026 11:00"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "url": "https://gislink.sarawak.gov.my/server/rest/services/mficord/RainFall/FeatureServer/1",
+    "count": {
+      "count": 287
+    },
+    "extent4326": {
+      "extent": {
+        "xmin": 109.64542777067132,
+        "ymin": 0.9159388378776229,
+        "xmax": 115.61855772135644,
+        "ymax": 4.955980220657201,
+        "spatialReference": {
+          "wkid": 4326,
+          "latestWkid": 4326
+        }
+      }
+    },
+    "geometryType": "esriGeometryPoint",
+    "fields": [
+      {
+        "name": "objectid",
+        "alias": "ObjectID"
+      },
+      {
+        "name": "record_no_",
+        "alias": "Record No#"
+      },
+      {
+        "name": "station_id",
+        "alias": "Station ID"
+      },
+      {
+        "name": "station_name",
+        "alias": "Station Name"
+      },
+      {
+        "name": "station_type",
+        "alias": "Station Type"
+      },
+      {
+        "name": "division",
+        "alias": "Division"
+      },
+      {
+        "name": "river_basin",
+        "alias": "River Basin"
+      },
+      {
+        "name": "latitude",
+        "alias": "Latitude"
+      },
+      {
+        "name": "longitude",
+        "alias": "Longitude"
+      },
+      {
+        "name": "rf_hourly__mm_",
+        "alias": "RF Hourly (mm)"
+      },
+      {
+        "name": "rf_status",
+        "alias": "RF Status"
+      },
+      {
+        "name": "rf_daily__mm_",
+        "alias": "RF Daily (mm)"
+      },
+      {
+        "name": "timestamp",
+        "alias": "Timestamp"
+      }
+    ],
+    "copyright": "",
+    "capabilities": "Query,Create,Update,Delete,Uploads,Editing",
+    "advanced": {
+      "supportsPagination": true,
+      "supportsTrueCurve": true,
+      "supportsQueryWithDistance": true,
+      "supportsReturningQueryExtent": true,
+      "supportsStatistics": true,
+      "supportsPercentileStatistics": true,
+      "supportsHavingClause": true,
+      "supportsOrderBy": true,
+      "supportsDistinct": true,
+      "supportsCountDistinct": true,
+      "supportsQueryWithResultType": true,
+      "supportsReturningGeometryCentroid": false,
+      "supportsSqlExpression": true,
+      "supportsQueryWithDatumTransformation": true,
+      "supportsLod": false,
+      "supportsQueryWithLodSR": false,
+      "supportsQueryAnalytic": true
+    },
+    "sample": {
+      "type": "FeatureCollection",
+      "features": [
+        {
+          "type": "Feature",
+          "id": 1,
+          "geometry": {
+            "type": "Point",
+            "coordinates": [
+              109.64543,
+              1.95197
+            ]
+          },
+          "properties": {
+            "objectid": 1,
+            "record_no_": 1,
+            "station_id": "101211",
+            "station_name": "Samunsam",
+            "station_type": "Rainfall",
+            "division": "Kuching",
+            "river_basin": "Sungai Samunsam",
+            "latitude": 1.952,
+            "longitude": 109.6454722,
+            "rf_hourly__mm_": 0,
+            "rf_status": "No Rain",
+            "rf_daily__mm_": 0,
+            "timestamp": "06-08-2026 11:15"
+          }
+        }
+      ]
+    }
+  }
+]

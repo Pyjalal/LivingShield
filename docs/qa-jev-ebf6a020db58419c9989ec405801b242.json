@@ -1,0 +1,170 @@
+{
+  "id": "ebf6a020db58419c9989ec405801b242",
+  "status": "completed",
+  "request": {
+    "mode": "qa",
+    "goal": "Verify the contextual guided storm step.",
+    "url": "http://127.0.0.1:5180/",
+    "query": "",
+    "hackathon": "",
+    "category": "",
+    "max_steps": 8,
+    "max_pages": 1,
+    "timeout_seconds": 180,
+    "viewports": [
+      1440,
+      390
+    ],
+    "scenarios": [
+      {
+        "name": "Guided next action",
+        "goal": "Use Start the guided demo and Next step to reach Compare the storm.",
+        "assertions": [
+          {
+            "kind": "text_present",
+            "value": "Run one storm, then test local storage."
+          }
+        ]
+      }
+    ],
+    "assertions": [],
+    "field_values": {},
+    "use_planner": false,
+    "human_wait_seconds": 90,
+    "allowed_actions": [
+      "click",
+      "fill",
+      "select",
+      "scroll",
+      "wait"
+    ]
+  },
+  "coverage": [
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 1440,
+      "scenario": "Guided next action",
+      "status": "verified",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "Run one storm, then test local storage.",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "url": "http://127.0.0.1:5180/",
+      "width": 390,
+      "scenario": "Guided next action",
+      "status": "verified",
+      "assertions": [
+        {
+          "kind": "text_present",
+          "value": "Run one storm, then test local storage.",
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "findings": [],
+  "events": [
+    {
+      "type": "scenario",
+      "time": "2026-10-21T05:08:44.728169+00:00",
+      "name": "Guided next action",
+      "goal": "Use Start the guided demo and Next step to reach Compare the storm.",
+      "width": 1440
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T05:08:48.514465+00:00",
+      "step": 1,
+      "operation": "CLICK",
+      "label": "Start the guided demo From storm to intervention",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 418,
+      "text_helper": null,
+      "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0005.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T05:08:52.290875+00:00",
+      "step": 2,
+      "operation": "CLICK",
+      "label": "Next step →",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 372,
+      "text_helper": null,
+      "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0007.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T05:08:54.899563+00:00",
+      "step": 3,
+      "operation": "CLICK",
+      "label": "2 · Compare the storm",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 277,
+      "text_helper": null,
+      "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0009.png"
+    },
+    {
+      "type": "scenario",
+      "time": "2026-10-21T05:09:00.246932+00:00",
+      "name": "Guided next action",
+      "goal": "Use Start the guided demo and Next step to reach Compare the storm.",
+      "width": 390
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T05:09:02.731707+00:00",
+      "step": 4,
+      "operation": "CLICK",
+      "label": "Start the guided demo From storm to intervention",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 283,
+      "text_helper": null,
+      "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0014.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T05:09:06.161413+00:00",
+      "step": 5,
+      "operation": "CLICK",
+      "label": "Next step →",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 253,
+      "text_helper": null,
+      "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0016.png"
+    },
+    {
+      "type": "action",
+      "time": "2026-10-21T05:09:08.943034+00:00",
+      "step": 6,
+      "operation": "CLICK",
+      "label": "2 · Compare the storm",
+      "text": null,
+      "url": "http://127.0.0.1:5180/",
+      "latency_ms": 285,
+      "text_helper": null,
+      "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0018.png"
+    }
+  ],
+  "steps": 6,
+  "model_calls": 8,
+  "screenshot": "/api/runs/ebf6a020db58419c9989ec405801b242/artifacts/frame-0019.png",
+  "inspection": {
+    "reviewed": true,
+    "screenshots": [
+      "frame-0010.png",
+      "frame-0019.png"
+    ],
+    "observations": "Desktop and mobile show the shared-theme guide's Compare the storm instructions and reachable next-step control. This run verifies navigation/text, not the hydraulic result."
+  }
+}

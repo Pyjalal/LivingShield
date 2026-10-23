@@ -1,0 +1,108 @@
+.tt-workspace.tt-presenting .tt-heading,
+.tt-workspace.tt-presenting .tt-planner,
+.ls-lab.ls-presenting .ls-header,
+.ls-lab.ls-presenting .ls-config {
+  display: none;
+}
+.tt-workspace.tt-presenting .tt-layout,
+.ls-lab.ls-presenting .ls-workspace {
+  grid-template-columns: minmax(0, 1fr);
+}
+.tt-workspace.tt-presenting .tt-model-toolbar,
+.ls-lab.ls-presenting .ls-viewer-heading {
+  position: sticky;
+  top: 0;
+  z-index: 12;
+}
+.tt-workspace.tt-presenting .tt-model {
+  flex: 0 0 auto;
+  height: clamp(300px, 44vh, 520px);
+  min-height: 300px;
+}
+.tt-workspace.tt-presenting .tt-map-label {
+  top: 16px;
+  left: 20px;
+  max-width: 65%;
+}
+.tt-workspace.tt-presenting .tt-map-label h2 {
+  font-size: 18px;
+}
+.tt-frame-readout {
+  display: flex;
+  gap: 18px;
+  padding-top: 8px;
+  margin-top: 8px;
+  border-top: 1px solid var(--tt-border);
+}
+.tt-frame-readout span {
+  font-size: 9px;
+  color: var(--tt-muted);
+}
+.tt-frame-readout strong {
+  display: block;
+  font-size: 17px;
+  color: var(--tt-text);
+  font-weight: 600;
+  margin-top: 3px;
+}
+.tt-aerial-check .tt-frame-readout {
+  display: none;
+}
+.tt-model-toolbar .tt-presentation-toggle,
+.tt-model-toolbar .tt-jump-storm {
+  min-height: 32px;
+}
+.tt-model-toolbar .tt-presentation-toggle[aria-pressed='true'] {
+  background: var(--tt-nav-active);
+  color: var(--tt-nav-bg);
+}
+.ls-lab .ls-viewer-heading {
+  flex-wrap: wrap;
+}
+.ls-lab .ls-presentation-toggle {
+  margin-left: auto;
+}
+.ls-lab.ls-presenting .ls-scene-wrap {
+  height: clamp(380px, 59vh, 720px);
+}
+.ls-lab.ls-presenting .ls-viewer-heading {
+  background: var(--tt-surface);
+}
+.ls-lab.ls-presenting .ls-viewer-heading::before {
+  content: 'LIVINGSHIELD / RIVER LAB';
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--tt-muted);
+}
+@media (max-width: 760px) {
+  .tt-workspace.tt-presenting .tt-model {
+    height: 340px;
+  }
+  .tt-workspace.tt-presenting .tt-model-panel:has(.tt-inspector) .tt-model {
+    height: 510px;
+  }
+  .tt-workspace.tt-presenting .tt-model-panel:has(.tt-inspector) .tt-model.tt-aerial-check {
+    height: 900px;
+  }
+  .tt-workspace.tt-presenting .tt-map-label {
+    max-width: 80%;
+    top: 10px;
+    left: 14px;
+  }
+  .tt-workspace.tt-presenting .tt-map-label h2 {
+    font-size: 15px;
+  }
+  .tt-workspace.tt-presenting .tt-map-label > span {
+    font-size: 7px;
+  }
+  .ls-lab.ls-presenting .ls-scene-wrap {
+    height: 430px;
+    min-height: 300px;
+  }
+  .ls-lab.ls-presenting .ls-viewer-heading::before {
+    flex-basis: 100%;
+  }
+  .ls-lab .ls-viewer-heading {
+    gap: 8px;
+  }
+}
