@@ -101,8 +101,3 @@ LivingShield is a concept-screening tool. Its outputs require field survey, cali
 
 See [flood model validation](docs/FLOOD-MODEL-VALIDATION.md), [terrain sources](docs/FLOOD-TERRAIN-SOURCES.md) and [Malaysian data provenance](docs/MALAYSIAN-DATA.md).
 
-## Credits and source notices
-
-The hydrology software builds on [HydroGrid by Team Redacted](https://github.com/Sadat41/HydroGrid), with the original MIT notice retained in [LICENSE](LICENSE). Imported rendering code, datasets and supplied design assets retain their own provenance and terms; the repository's MIT notice does not grant rights to every included third-party asset.
-
-Detailed rendering credits and permissions are in [source notices](docs/SOURCE-NOTICES.md). Physical concept hashes and provenance are in [the asset record](app/public/livingshield/source.json). Data credits include OpenStreetMap contributors, Microsoft building footprints, Copernicus terrain and the respective Malaysian public-data providers.
